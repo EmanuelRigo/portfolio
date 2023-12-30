@@ -3,8 +3,11 @@ body {
 }
 
 #root {
- 
-  padding-left: 75px;
+  padding-left: 99px;
+}
+
+.colorCrema {
+  background-color: #aca391;
 }
 
 /*////ASIDE////*/
@@ -18,19 +21,16 @@ body {
   display: flex;
   flex-direction: column;
   transition: 1s ease-out;
-
   z-index: 400;
 }
 
 .myaside__container {
   overflow: hidden;
   background: #f5f2ed;
-  backdrop-filter: blur(4px);
-  border-top: solid 2px rgba(255, 255, 255, 0.18);
-  border-bottom: solid 2px rgba(255, 255, 255, 0.18);
-  border-right: solid 2px rgba(255, 255, 255, 0.18);
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border: solid 3px rgb(8, 8, 8);
+ 
+
+
 }
 
 .aside__container:hover {
@@ -39,8 +39,8 @@ body {
 
 .bgd-transparent {
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.15);
-  border: solid 2px rgba(255, 255, 255, 0.18);
+  background: #f5f2ed;
+  border: solid 2px #222
 }
 
 .myaside:hover {
@@ -52,7 +52,7 @@ body {
 }
 
 .aside__container {
-  width: 660px;
+ width: 660px;
   margin: 20px;
   display: flex;
   flex-direction: row;
@@ -62,8 +62,9 @@ body {
   text-decoration: none;
   height: 47px;
   box-sizing: border-box;
-  border-radius: 1rem;
   transition: 0.3s;
+
+
 }
 
 .aside__container i {
@@ -72,15 +73,27 @@ body {
   display: flex;
   align-items: center;
   transition: 0.3s;
+  
 }
+
+
+.aside__container p {
+  box-shadow: 300px 5px 0px -2px rgba(0,0,0,1);
+  width: 100%;
+  transition: 0.3s;
+  
+}
+
+.aside__container:hover p {
+  box-shadow: 1px 5px 0px -2px rgba(0,0,0,1);
+
+}
+
 
 .aside__container:hover i {
   transform: scale(1.2);
 }
 
-.aside__container:hover {
-  background-color: rgba(0, 0, 0, 0.35);
-}
 
 .myaside p {
   display: inline-block;
@@ -91,11 +104,41 @@ body {
 
 /*/////*/
 
+/*/////Header///*/
+
+.lineas {
+  display: inline-block;
+  position: relative;
+  left: 110px;
+}
+
+.lineas::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: currentColor;
+  top: 0.8em;
+ left: -110px;
+
+}
+
+.header__title {
+  font-family: 'Permanent Marker', cursive;
+
+  font-size: 4rem;
+}
+/*///////*/
+
+ 
+
+
+
 /*///SKILLS///*/
 
 .skills {
   width: 100%;
-  color: whitesmoke;
+  
   display: flex;
   text-align: center;
   justify-content: center;
@@ -170,7 +213,6 @@ body {
   height: 700px;
 }
 
-
 /*//////*/
 
 /*////project-card///*/
@@ -214,7 +256,5 @@ body {
 .projectCard__gitIcon:hover {
   transform: scale(1.2);
 }
-
-
 
 /*/////*/

@@ -1,10 +1,9 @@
-import Skills from "./Skills";
+import Skills from "./Skills2";
 import ProjectContainer from "./ProjectContainer";
 
 function Section() {
   return (
     <section className="mx-3 row mt-5">
-      <Skills></Skills>
       <ProjectContainer></ProjectContainer>
     </section>
   );

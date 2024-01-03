@@ -31,7 +31,7 @@ header {
   overflow: hidden;
   background: #f5f2ed;
   border: solid 3px rgb(8, 8, 8);
- 
+ border-radius: 1rem;
 
 
 }
@@ -131,6 +131,34 @@ header {
 
   font-size: 4rem;
 }
+
+
+.header__btn {
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.header__btn img {
+  height: 4rem;
+
+}
+
+.header__btn p {
+ position: relative;
+  top: -60px;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  transition: 0.1s;
+}
+
+.header__btn:hover p {
+  transform: scale(1.1);
+
+}
+
+
 /*///////*/
 
  
@@ -216,6 +244,24 @@ header {
   height: 700px;
 }
 
+.contenedor {
+  position: relative;
+}
+
+.circulo {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-color: #222;
+  position: absolute;
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.contenedor:hover .circulo {
+ transform: scale(1);
+
+}
 /*//////*/
 
 /*////project-card///*/

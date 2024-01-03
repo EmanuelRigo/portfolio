@@ -11,7 +11,7 @@ import {
 
 import { FaBootstrap, FaSass } from "react-icons/fa";
 import { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Badge } from "react-bootstrap";
 
 function Skills() {
   const [nombreLenguaje, setNombreLenguaje] = useState();
@@ -26,76 +26,111 @@ function Skills() {
       <Col lg={9}>
         <h2 className="display-6 text-dark">
           {" "}
-          Trabajo con <span className="text-warning">
-            {nombreLenguaje}
-          </span>{" "}
+          Trabajo con{" "}
+          <Badge pill bg="warning">
+            <span className="text-dark">{nombreLenguaje}</span>{" "}
+          </Badge>
         </h2>
         <Row className="justify-content-center justify-content-md-start mb-5">
           <Col xs={"auto"} className="d-flex p-0">
-            <AiFillHtml5
-              data-nombre="Html"
-              onMouseEnter={handleChangeName}
-              className="icono html"
-            />
+            <div className="contenedor">
+              <div className="circulo"></div>
+              <AiFillHtml5
+                data-nombre="Html"
+                onMouseEnter={handleChangeName}
+                className="icono html"
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoCss3
+                data-nombre="Css"
+                onMouseEnter={handleChangeName}
+                className="icono css"
+              />
+            </div>
 
-            <BiLogoCss3
-              data-nombre="Css"
-              onMouseEnter={handleChangeName}
-              className="icono css"
-            />
-            <BiLogoJavascript
-              data-nombre="JavaScript"
-              onMouseEnter={handleChangeName}
-              className="icono js"
-            />
+            <div className="contenedor">
+              <div className="circulo"></div>
+              <BiLogoJavascript
+                data-nombre="JavaScript"
+                onMouseEnter={handleChangeName}
+                className="icono js"
+              />
+            </div>
+          </Col>
+
+          <Col xs={"auto"} className="d-flex p-0">
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoReact
+                className="icono react"
+                data-nombre="ReactJs"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoNodejs
+                className="icono nodejs"
+                data-nombre="NodeJs"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <FaBootstrap
+                className="icono bootstrap"
+                data-nombre="Bootstrap"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
           </Col>
           <Col xs={"auto"} className="d-flex p-0">
-            <BiLogoReact
-              className="icono react"
-              data-nombre="ReactJs"
-              onMouseEnter={handleChangeName}
-            />
-            <BiLogoNodejs
-              className="icono nodejs"
-              data-nombre="NodeJs"
-              onMouseEnter={handleChangeName}
-            />
-            <FaBootstrap
-              className="icono bootstrap"
-              data-nombre="Bootstrap"
-              onMouseEnter={handleChangeName}
-            />
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoTailwindCss
+                className="icono tailwind"
+                data-nombre="Tailwind"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <AiFillGithub
+                className="icono github"
+                data-nombre="Github"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoGit
+                className="icono git"
+                data-nombre="Git"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
           </Col>
           <Col xs={"auto"} className="d-flex p-0">
-            <BiLogoTailwindCss
-              className="icono tailwind"
-              data-nombre="Tailwind"
-              onMouseEnter={handleChangeName}
-            />
-            <AiFillGithub
-              className="icono github"
-              data-nombre="Github"
-              onMouseEnter={handleChangeName}
-            />
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoFirebase
+                className="icono firebase"
+                data-nombre="Firebase"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
 
-            <BiLogoGit
-              className="icono git"
-              data-nombre="Git"
-              onMouseEnter={handleChangeName}
-            />
-          </Col>
-          <Col xs={"auto"} className="d-flex p-0">
-            <BiLogoFirebase
-              className="icono firebase"
-              data-nombre="Firebase"
-              onMouseEnter={handleChangeName}
-            />
-
-            <FaSass
-              className="icono sass"
-              data-nombre="Sass"
-              onMouseEnter={handleChangeName}
-            />
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <FaSass
+                className="icono sass"
+                data-nombre="Sass"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
           </Col>
         </Row>
       </Col>

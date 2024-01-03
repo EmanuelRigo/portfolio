@@ -18,7 +18,10 @@ function Header() {
             Hello, I'm a front-end dev striving for intuitive interfaces.
             Currently, enhancing backend skills.
           </p>
-          <button>let's talk!</button>
+          <button className="header__btn">
+            <Image fluid src="../svg/brush.png" alt="" />
+            <p className="text-warning">let's talk!</p>
+          </button>
         </Col>
         <Col
           lg={5}

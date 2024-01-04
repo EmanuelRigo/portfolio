@@ -319,8 +319,9 @@ header {
 
 
 .wave {
-  position: absolute;
+  position: fixed;
   left: 0;
-  transform: translate(0px, -353px);
+  bottom: 0;
+
   z-index: -10;
 }

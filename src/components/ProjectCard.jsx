@@ -2,14 +2,7 @@ import { useState } from "react";
 import { Card, Col, Row, Badge } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 
-
-function ProjectCard(
-{  image,
-  name,
-  description,
-  icons,
-  link,}
-) {
+function ProjectCard({ image, name, description, icons, link }) {
   const [isTruncated, setIsTruncated] = useState(true);
 
   const handleMouseOver = () => {
@@ -32,25 +25,32 @@ function ProjectCard(
             <Card.Img
               src={"../images/" + image}
               alt={name}
-              style={{ height: "100%" }}
+              /*   style={{ height: "10rem" }} */
               className="projectCard__img"
             />
           </a>
         </Col>
         <Col md={7}>
-          <Card.Body className="px-0">
-            <Card.Title>{name}</Card.Title>
-            <Card.Text
-              className={`projectCard__description ${
-                isTruncated ? "text-truncate" : ""
-              }`}
-            >
-              {description}
-            </Card.Text>
+          <Card.Body className="px-0 ">
+            <div>
+              <Card.Title>{name}</Card.Title>
+              <Card.Text
+                className={`projectCard__description ${
+                  isTruncated ? "text-truncate" : ""
+                }`}
+              >
+                {description}
+              </Card.Text>
+            </div>
 
-         {icons.map((icon, index) => (
-              <span key={index}>{icon}</span>
-            ))} 
+            <Badge pill bg="dark" className="mt-4">
+              {icons.map((icon, index) => (
+                <span className="text-warning" key={index}>
+                  {icon}
+                </span>
+              ))}
+            </Badge>
+
             <a href={link}>
               <Badge
                 bg="dark"

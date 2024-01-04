@@ -23,10 +23,9 @@ function Skills() {
 
   return (
     <Row className="">
-      <Col lg={9}>
-        <h2 className="display-6 text-dark">
-          {" "}
-          Trabajo con{" "}
+      <Col lg={7} className="px-0">
+        <h2 className="display-6 text-center text-md-start text-dark">
+          Trabajo con
           <Badge pill bg="warning">
             <span className="text-dark">{nombreLenguaje}</span>{" "}
           </Badge>
@@ -134,7 +133,7 @@ function Skills() {
           </Col>
         </Row>
       </Col>
-      <Col lg={3}>
+      <Col lg={5}>
         {" "}
         <Row>
           <Col xs={6}>

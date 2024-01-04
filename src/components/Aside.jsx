@@ -4,7 +4,7 @@ import { PiFolderSimpleUserLight } from "react-icons/pi";
 
 function Aside() {
   return (
-    <div className="myaside rounded mx-4">
+    <div className="myaside mx-4">
       <div className="myaside__container h-100 my-4">
         <a href="https://github.com/EmanuelRigo" className="aside__container">
           <i>

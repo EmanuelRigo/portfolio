@@ -43,7 +43,7 @@ header {
 .bgd-transparent {
   border-radius: 1rem;
   background: #f5f2ed;
-  border: solid 2px #222
+  border: solid 3px #222
 }
 
 .myaside:hover {
@@ -268,9 +268,11 @@ header {
 
 .projectCard__img {
   object-fit: cover;
-  filter: brightness(0.7);
-  transition: 0.5s;
+  filter: brightness(0.5)sepia(0.4);
+   transition: 0.1s;
   cursor: pointer;
+  height: 10rem;
+
 }
 
 .projectCard__description {
@@ -288,7 +290,7 @@ header {
 
 .projectCard__img:hover {
   filter: brightness(1);
-  transform: scale(1.05);
+ outline: solid 3px #222;
 }
 
 .projectCard__gitIcon {
@@ -296,6 +298,7 @@ header {
   font-size: 1.8rem;
   cursor: pointer;
   transition: 0.3s;
+
 }
 
 .projectCard svg {
@@ -303,7 +306,8 @@ header {
 }
 
 .projectCard__gitIcon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2);  
+  color: #f0db4f;
 }
 
 /*/////*/
@@ -311,4 +315,10 @@ header {
 
 .bg-danger {
   height: 100%;
+}
+
+
+.wave {
+  position: absolute;
+  left: 0;
 }

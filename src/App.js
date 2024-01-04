@@ -15,11 +15,11 @@ function App() {
       <Container>
         <Aside></Aside>
         <Section></Section>
-        <Contact></Contact>
+        <Contact></Contact> <Footer></Footer>
       </Container>
 
       <Wabe />
-      <Footer></Footer>
+     
     </>
   );
 }

@@ -321,4 +321,6 @@ header {
 .wave {
   position: absolute;
   left: 0;
+  transform: translate(0px, -353px);
+  z-index: -10;
 }

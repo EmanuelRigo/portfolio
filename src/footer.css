@@ -1,9 +1,11 @@
 /* #f0db4f */
-footer{
-  
-    padding-bottom: 10px;
+footer {
+  padding-bottom: 10px;
 }
-a{ 
-    color: #222;
-    text-decoration: none;
+a {
+  color: #222;
+  text-decoration: none;
+}
+svg {
+  font-size: 2rem;
 }

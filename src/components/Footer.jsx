@@ -7,10 +7,10 @@ import { Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="mt-5">
+    <footer className="mt-5 mb-3">
       <Row>
         <Col className="mx-auto">
-          <h4 className="text-center">¡Para conocerme mas!</h4>{" "}
+          <h3 className="text-center m-4">¡Para conocerme mas!</h3>{" "}
         </Col>
       </Row>
       <Row>

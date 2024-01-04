@@ -5,6 +5,7 @@ import "./App.css"
 import Section from './components/Section';
 import Header from './components/Header';
 import Wabe from './components/Wave';
+import Footer from './components/Footer'
 
 function App() {
   return (<>
@@ -13,8 +14,9 @@ function App() {
     <Aside></Aside>
     <Section></Section>
    </Container>
-   <Wabe/></>
-   
+   <Wabe/>
+   <Footer></Footer>
+   </>
   )
 }
 

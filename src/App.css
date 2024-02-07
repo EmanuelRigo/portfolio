@@ -31,9 +31,7 @@ header {
   overflow: hidden;
   background: #f5f2ed;
   border: solid 3px rgb(8, 8, 8);
- border-radius: 1rem;
-
-
+  border-radius: 1rem;
 }
 
 .aside__container:hover {
@@ -43,7 +41,7 @@ header {
 .bgd-transparent {
   border-radius: 1rem;
   background: #f5f2ed;
-  border: solid 3px #222
+  border: solid 3px #222;
 }
 
 .myaside:hover {
@@ -55,7 +53,7 @@ header {
 }
 
 .aside__container {
- width: 660px;
+  width: 660px;
   margin: 20px;
   display: flex;
   flex-direction: row;
@@ -66,8 +64,6 @@ header {
   height: 47px;
   box-sizing: border-box;
   transition: 0.3s;
-
-
 }
 
 .aside__container i {
@@ -76,27 +72,21 @@ header {
   display: flex;
   align-items: center;
   transition: 0.3s;
-  
 }
 
-
 .aside__container p {
-  box-shadow: 300px 5px 0px -2px rgba(0,0,0,1);
+  box-shadow: 300px 5px 0px -2px rgba(0, 0, 0, 1);
   width: 100%;
   transition: 0.3s;
-  
 }
 
 .aside__container:hover p {
-  box-shadow: 1px 5px 0px -2px rgba(0,0,0,1);
-
+  box-shadow: 1px 5px 0px -2px rgba(0, 0, 0, 1);
 }
-
 
 .aside__container:hover i {
   transform: scale(1.2);
 }
-
 
 .myaside p {
   display: inline-block;
@@ -115,61 +105,50 @@ header {
   left: 110px;
 }
 
-.lineas::before{
-  content: '';
+.lineas::before {
+  content: "";
   position: absolute;
   width: 100px;
   height: 1px;
   background-color: currentColor;
   top: 0.8em;
- left: -110px;
-
+  left: -110px;
 }
 
 .header__title {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 
-  font-size: 4rem;
+  font-size: 3.7rem;
 }
-
 
 .header__btn {
   border: none;
   background-color: transparent;
 }
 
-
-
 .header__btn img {
   height: 4rem;
-
 }
 
 .header__btn p {
- position: relative;
+  position: relative;
   top: -60px;
   font-size: 2rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   transition: 0.1s;
 }
 
 .header__btn:hover p {
   transform: scale(1.1);
-
 }
 
-
 /*///////*/
-
- 
-
-
 
 /*///SKILLS///*/
 
 .skills {
   width: 100%;
-  
+
   display: flex;
   text-align: center;
   justify-content: center;
@@ -193,7 +172,7 @@ header {
 }
 
 .icono:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .icono:hover.html {
@@ -259,20 +238,26 @@ header {
 }
 
 .contenedor:hover .circulo {
- transform: scale(1);
-
+  transform: scale(1);
 }
 /*//////*/
 
 /*////project-card///*/
 
+.project__icon {
+  transition: 0.4s;
+}
+
+.project__icon:hover {
+  transform: scale(1.4);
+}
+
 .projectCard__img {
   object-fit: cover;
-  filter: brightness(0.5)sepia(0.4);
-   transition: 0.1s;
+  filter: brightness(0.5) sepia(0.4);
+  transition: 0.1s;
   cursor: pointer;
   height: 10rem;
-
 }
 
 .projectCard__description {
@@ -290,7 +275,7 @@ header {
 
 .projectCard__img:hover {
   filter: brightness(1);
- outline: solid 3px #222;
+  outline: solid 3px #222;
 }
 
 .projectCard__gitIcon {
@@ -298,7 +283,6 @@ header {
   font-size: 1.8rem;
   cursor: pointer;
   transition: 0.3s;
-
 }
 
 .projectCard svg {
@@ -306,22 +290,55 @@ header {
 }
 
 .projectCard__gitIcon:hover {
-  transform: scale(1.2);  
-  color: #f0db4f;
+  transform: scale(1.5);
 }
 
 /*/////*/
-
 
 .bg-danger {
   height: 100%;
 }
 
-
 .wave {
   position: fixed;
   left: 0;
   bottom: 0;
-
   z-index: -10;
+}
+
+/*///FORM////*/
+
+.form__contact {
+  position: relative;
+}
+
+.form__btn {
+  position: absolute;
+  right: 35px;
+}
+
+/*///FOOTER///*/
+
+.footer__a {
+  color: #222;
+  text-decoration: none;
+  position: relative;
+}
+
+footer svg {
+  font-size: 2rem;
+}
+
+.outline {
+  width: 100%;
+  height: 100%;
+  outline: 2px solid #222;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.footer__a:hover .outline {
+  transform: scale(1.2);
 }

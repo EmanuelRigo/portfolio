@@ -6,19 +6,27 @@ function Aside() {
   return (
     <div className="myaside mx-4">
       <div className="myaside__container h-100 my-4">
-        <a href="https://github.com/EmanuelRigo" className="aside__container">
+        <a
+          target="_blank"
+          href="https://github.com/EmanuelRigo"
+          className="aside__container"
+        >
           <i>
             <BsGithub></BsGithub>
           </i>
           <p className="py-2">GitHub</p>
         </a>
-        <a href="https://wa.link/8b7k9a" className="aside__container">
+        <a
+          target="_black"
+          href="https://wa.link/8b7k9a"
+          className="aside__container"
+        >
           <i>
             <BsWhatsapp />
           </i>
           <p className="py-2">11-6269-9719</p>
         </a>
-        <a href="#contacto" className="aside__container">
+        <a href="#contact" className="aside__container">
           <i>
             <AiOutlineMail></AiOutlineMail>
           </i>
@@ -28,7 +36,7 @@ function Aside() {
           <i>
             <PiFolderSimpleUserLight></PiFolderSimpleUserLight>
           </i>
-          <p className="py-2">Projectos</p>
+          <p className="py-2">Projects</p>
         </a>
       </div>
     </div>

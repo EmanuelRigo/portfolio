@@ -1,5 +1,6 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Skills from "./Skills3";
+import Blob from "./Blob";
 
 function Header() {
   return (
@@ -28,9 +29,11 @@ function Header() {
           className="d-flex align-items-center justify-content-center"
         >
           <div
-            style={{ height: "16rem", width: "16rem" }}
-            className="bg-warning"
-          ></div>
+            style={{ height: "29rem" }}
+            className="d-flex justify-content-center"
+          >
+            <Blob></Blob>
+          </div>
         </Col>
       </Row>
       <Skills></Skills>

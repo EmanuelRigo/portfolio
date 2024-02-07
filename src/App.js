@@ -15,7 +15,8 @@ function App() {
       <Container>
         <Aside></Aside>
         <Section></Section>
-        <Contact></Contact> <Footer></Footer>
+        <Contact></Contact>
+        <Footer></Footer>
       </Container>
 
       <Wabe />

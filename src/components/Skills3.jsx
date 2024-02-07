@@ -4,10 +4,11 @@ import {
   BiLogoJavascript,
   BiLogoReact,
   BiLogoNodejs,
-  BiLogoTailwindCss,
   BiLogoGit,
   BiLogoFirebase,
+  BiLogoTypescript,
 } from "react-icons/bi";
+import { DiSqllite } from "react-icons/di";
 
 import { FaBootstrap, FaSass } from "react-icons/fa";
 import { useState } from "react";
@@ -23,14 +24,14 @@ function Skills() {
 
   return (
     <Row className="">
-      <Col lg={7} className="px-0">
-        <h2 className="display-6 text-center text-md-start text-dark">
-          Trabajo con
+      <Col lg={7} className="px-0 d-flex flex-column justify-content-end">
+        <h3 className="display-6 text-center text-md-start text-dark">
+          I work with
           <Badge pill bg="warning">
             <span className="text-dark">{nombreLenguaje}</span>{" "}
           </Badge>
-        </h2>
-        <Row className="justify-content-center justify-content-md-start mb-5">
+        </h3>
+        <Row className="justify-content-center justify-content-md-start mb-5 mb-md-2">
           <Col xs={"auto"} className="d-flex p-0">
             <div className="contenedor">
               <div className="circulo"></div>
@@ -88,9 +89,9 @@ function Skills() {
           <Col xs={"auto"} className="d-flex p-0">
             <div className="contenedor">
               <div className="circulo"></div>{" "}
-              <BiLogoTailwindCss
-                className="icono tailwind"
-                data-nombre="Tailwind"
+              <FaSass
+                className="icono sass"
+                data-nombre="Sass"
                 onMouseEnter={handleChangeName}
               />
             </div>
@@ -121,29 +122,55 @@ function Skills() {
                 onMouseEnter={handleChangeName}
               />
             </div>
-
-            <div className="contenedor">
-              <div className="circulo"></div>{" "}
-              <FaSass
-                className="icono sass"
-                data-nombre="Sass"
-                onMouseEnter={handleChangeName}
-              />
-            </div>
           </Col>
         </Row>
       </Col>
-      <Col lg={5}>
-        {" "}
+      <Col
+        lg={5}
+        className="px-0 d-flex flex-column justify-content-end mb-5 mb-md-2"
+      >
         <Row>
           <Col xs={6}>
             <p className="display-6">1.5+ years</p>
           </Col>
           <Col xs={6}>
-            <p className="display-6">07 Projects</p>
+            <p className="display-6">05 Projects</p>
           </Col>
           <hr />
           <hr />
+          <Col>
+            <p className="display-6">
+              currently studying back-end in coderhouse
+            </p>
+          </Col>
+          <hr />
+          <hr />
+        </Row>
+
+        <Row className="justify-content-center justify-content-md-start">
+          <Col xs={"auto"} className="d-flex align-items-center p-0 mx-md-2">
+            <h3 className="display-6 text-center text-md-start text-dark">
+              Adding up
+            </h3>
+          </Col>
+          <Col xs={"auto"} className="d-flex p-0">
+            <div className="contenedor">
+              <div className="circulo"></div>
+              <BiLogoTypescript
+                className="icono firebase"
+                data-nombre="TypeScript"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>
+              <DiSqllite
+                className="icono firebase"
+                data-nombre="Sqllite"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+          </Col>
         </Row>
       </Col>
     </Row>

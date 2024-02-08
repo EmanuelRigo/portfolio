@@ -1,4 +1,3 @@
-import Skills from "./Skills2";
 import ProjectContainer from "./ProjectContainer";
 import AccordionCertificate from "./AccordionCertificate";
 

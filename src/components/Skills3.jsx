@@ -130,14 +130,14 @@ function Skills() {
         className="px-0 d-flex flex-column justify-content-end mb-5 mb-md-2"
       >
         <Row>
-          <Col xs={6}>
+          {/*           <Col xs={6}>
             <p className="display-6">1.5+ years</p>
           </Col>
           <Col xs={6}>
             <p className="display-6">05 Projects</p>
           </Col>
           <hr />
-          <hr />
+          <hr /> */}
           <Col>
             <p className="display-6">
               currently studying back-end in coderhouse

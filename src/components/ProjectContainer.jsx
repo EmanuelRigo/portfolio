@@ -49,7 +49,7 @@ function ProjectContainer() {
             ]}
           />
           <ProjectCard
-            image="../images/lab 01.png"
+            image="../images/lab 04.png"
             name="Lab"
             description="Website and system for a clinical laboratory"
             link="https://github.com/EmanuelRigo/lab"

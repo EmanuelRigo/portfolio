@@ -2,7 +2,14 @@ import { useState } from "react";
 import { Card, Col, Row, Badge } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 
-function ProjectCard({ image, name, description, icons, link }) {
+function ProjectCard({
+  image,
+  name,
+  description,
+  icons,
+  linkGithub,
+  linkHosting,
+}) {
   const [isTruncated, setIsTruncated] = useState(true);
 
   const handleMouseOver = () => {
@@ -21,7 +28,7 @@ function ProjectCard({ image, name, description, icons, link }) {
     >
       <Row className="p-2">
         <Col md={5}>
-          <a href="https://www.youtube.com">
+          <a target="blank" href={linkHosting}>
             <Card.Img
               src={"../images/" + image}
               alt={name}
@@ -51,7 +58,7 @@ function ProjectCard({ image, name, description, icons, link }) {
               ))}
             </Badge>
 
-            <a href={link}>
+            <a href={linkGithub}>
               <Badge
                 bg="dark"
                 className="position-absolute bottom-0 start-100 translate-middle"

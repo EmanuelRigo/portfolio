@@ -22,7 +22,8 @@ function ProjectContainer() {
             image={"cafe 00.png"}
             name={"Cafe"}
             description={"Website for an oriental cafeteria in Buenos Aires."}
-            link={"https://github.com/EmanuelRigo/cafe"}
+            linkGithub={"https://github.com/EmanuelRigo/cafe"}
+            linkHosting={"https://www.youtube.com"}
             icons={[
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
@@ -38,7 +39,8 @@ function ProjectContainer() {
             description={
               "E-commerce React: Technology and gaming merged to offer a dynamic shopping experience"
             }
-            link="https://github.com/EmanuelRigo/videoteca"
+            linkGithub="https://github.com/EmanuelRigo/e-techstore"
+            linkHosting={"https://e-techstore.vercel.app/"}
             icons={[
               <BiLogoReact className="project__icon" />,
               <AiFillHtml5 className="project__icon" />,
@@ -52,7 +54,8 @@ function ProjectContainer() {
             image="../images/lab 04.png"
             name="Lab"
             description="Website and system for a clinical laboratory"
-            link="https://github.com/EmanuelRigo/lab"
+            linkGithub="https://github.com/EmanuelRigo/lab"
+            linkHosting={"https://lab-paroti.netlify.app/"}
             icons={[
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
@@ -66,7 +69,8 @@ function ProjectContainer() {
             image={"../images/videoteca 03.png"}
             name={"Videoteca"}
             description={"Website with movies info"}
-            link="https://github.com/EmanuelRigo/videoteca"
+            linkGithub="https://github.com/EmanuelRigo/videoteca"
+            linkHosting={"https://e-techstore.vercel.app/"}
             icons={[
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
@@ -78,7 +82,8 @@ function ProjectContainer() {
             image={"../images/playask 00.png"}
             name={"PlayAsk"}
             description={"Trivia application with various categories."}
-            link="https://github.com/EmanuelRigo/playask"
+            linkGithub="https://github.com/EmanuelRigo/playask"
+            linkHosting={"https://e-techstore.vercel.app/"}
             icons={[
               <BiLogoReact className="project__icon" />,
               <AiFillHtml5 className="project__icon" />,

@@ -28,12 +28,12 @@ function Header() {
           lg={5}
           className="d-flex align-items-center justify-content-center"
         >
-          <div
+          {/*           <div
             style={{ height: "29rem" }}
             className="d-flex justify-content-center"
           >
             <Blob></Blob>
-          </div>
+          </div> */}
         </Col>
       </Row>
       <Skills></Skills>

@@ -23,7 +23,7 @@ function ProjectContainer() {
             name={"Cafe"}
             description={"Website for an oriental cafeteria in Buenos Aires."}
             linkGithub={"https://github.com/EmanuelRigo/cafe"}
-            linkHosting={"https://www.youtube.com"}
+            linkHosting={"https://cafe-one-beige.vercel.app/"}
             icons={[
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
@@ -53,7 +53,8 @@ function ProjectContainer() {
           <ProjectCard
             image="../images/lab 04.png"
             name="Lab"
-            description="Website and system for a clinical laboratory"
+            description="Website and system for a clinical laboratory
+            user: maira.lab / password: 8787"
             linkGithub="https://github.com/EmanuelRigo/lab"
             linkHosting={"https://lab-paroti.netlify.app/"}
             icons={[
@@ -64,26 +65,12 @@ function ProjectContainer() {
               <BiLogoFirebase className="project__icon" />,
             ]}
           />
-
           <ProjectCard
-            image={"../images/videoteca 03.png"}
-            name={"Videoteca"}
-            description={"Website with movies info"}
-            linkGithub="https://github.com/EmanuelRigo/videoteca"
-            linkHosting={"https://e-techstore.vercel.app/"}
-            icons={[
-              <AiFillHtml5 className="project__icon" />,
-              <BiLogoCss3 className="project__icon" />,
-              <BiLogoJavascript className="project__icon" />,
-              <TbApi className="project__icon" />,
-            ]}
-          />
-          <ProjectCard
-            image={"../images/playask 00.png"}
-            name={"PlayAsk"}
+            image={"../images/masterquiz 00.png"}
+            name={"MasterQuiz"}
             description={"Trivia application with various categories."}
             linkGithub="https://github.com/EmanuelRigo/playask"
-            linkHosting={"https://e-techstore.vercel.app/"}
+            linkHosting={"https://masterquiz.vercel.app/"}
             icons={[
               <BiLogoReact className="project__icon" />,
               <AiFillHtml5 className="project__icon" />,
@@ -91,6 +78,19 @@ function ProjectContainer() {
               <BiLogoJavascript className="project__icon" />,
               <BiLogoFirebase className="project__icon" />,
               <BiLogoTailwindCss className="project__icon" />,
+            ]}
+          />
+          <ProjectCard
+            image={"../images/videoteca 03.png"}
+            name={"Videoteca"}
+            description={"Website with movies info"}
+            linkGithub="https://github.com/EmanuelRigo/videoteca"
+            linkHosting={"https://videoteca-dun.vercel.app/"}
+            icons={[
+              <AiFillHtml5 className="project__icon" />,
+              <BiLogoCss3 className="project__icon" />,
+              <BiLogoJavascript className="project__icon" />,
+              <TbApi className="project__icon" />,
             ]}
           />
         </Col>

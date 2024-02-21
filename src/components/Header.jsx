@@ -16,7 +16,7 @@ function Header() {
             <span className="text-warning">.</span>
           </h2>
           <p className="fs-4 mb-5">
-            Hello, I'm a front-end dev striving for intuitive interfaces.
+            Hello, I'm a front-end dev, aiming for intuitive user experiences.
             Currently, enhancing backend skills.
           </p>
           <button className="header__btn">

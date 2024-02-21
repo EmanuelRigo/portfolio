@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="mt-5 mb-3">
       <Row>
         <Col className="mx-auto">
-          <h3 className="text-center m-4 display-6">To know me more!</h3>{" "}
+          <h3 className="text-center m-4 display-6">Get to know me!</h3>{" "}
         </Col>
       </Row>
       <Row>

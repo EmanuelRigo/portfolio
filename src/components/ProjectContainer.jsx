@@ -77,7 +77,7 @@ function ProjectContainer() {
               <BiLogoCss3 className="project__icon" />,
               <BiLogoJavascript className="project__icon" />,
               <BiLogoFirebase className="project__icon" />,
-              <BiLogoTailwindCss className="project__icon" />,
+              <FaBootstrap className="project__icon" />,
             ]}
           />
           <ProjectCard

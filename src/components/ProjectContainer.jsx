@@ -84,7 +84,7 @@ function ProjectContainer() {
             image={"../images/videoteca 03.png"}
             name={"Videoteca"}
             description={
-              "Website with movies info user: maira@hotmail.com / password: 8787"
+              "The first application I made. Website with movies info. user: maira@hotmail.com / password: 8787"
             }
             linkGithub="https://github.com/EmanuelRigo/videoteca"
             linkHosting={"https://videoteca-dun.vercel.app/"}

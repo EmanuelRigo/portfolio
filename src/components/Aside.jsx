@@ -24,7 +24,7 @@ function Aside() {
           <i>
             <BsWhatsapp />
           </i>
-          <p className="py-2">11-6269-9719</p>
+          <p className="py-2">+54 9 11 6269 9719</p>
         </a>
         <a href="#contact" className="aside__container">
           <i>

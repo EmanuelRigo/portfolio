@@ -69,7 +69,7 @@ function ProjectContainer() {
             image={"../images/masterquiz 00.png"}
             name={"MasterQuiz"}
             description={"Trivia application with various categories."}
-            linkGithub="https://github.com/EmanuelRigo/playask"
+            linkGithub="https://github.com/EmanuelRigo/masterquiz"
             linkHosting={"https://masterquiz.vercel.app/"}
             icons={[
               <BiLogoReact className="project__icon" />,

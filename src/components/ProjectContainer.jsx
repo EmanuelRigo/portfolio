@@ -30,6 +30,20 @@ function ProjectContainer() {
               <FaBootstrap className="project__icon" />,
             ]}
           ></ProjectCard>
+          <ProjectCard
+            image={"travel_simulator.png"}
+            name={"Travel Simulator"}
+            description={
+              "A web platform simulating flights, integrating real-time weather data via JavaScript and a weather API."
+            }
+            linkGithub={"https://github.com/EmanuelRigo/Preentrega-Coderhouse"}
+            linkHosting={"https://preentrega-coderhouse.vercel.app/"}
+            icons={[
+              <AiFillHtml5 className="project__icon" />,
+              <BiLogoCss3 className="project__icon" />,
+              <FaBootstrap className="project__icon" />,
+            ]}
+          ></ProjectCard>
         </Col>
         <Col lg={6} className="px-md-3 order-md-1 p-0">
           <h3 className="text-dark display-6">Projects</h3>

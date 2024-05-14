@@ -39,6 +39,7 @@ function ProjectContainer() {
             linkGithub={"https://github.com/EmanuelRigo/Preentrega-Coderhouse"}
             linkHosting={"https://preentrega-coderhouse.vercel.app/"}
             icons={[
+              <BiLogoJavascript className="project__icon" />,
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
               <FaBootstrap className="project__icon" />,

@@ -12,7 +12,7 @@ function AccordionCertificate() {
             <Image
               rounded
               fluid
-              src="../images/637b89664af3dc000ec07938.png"
+              src="../images/certficado JavaScript.png"
             ></Image>
           </Col>
         </Accordion.Body>

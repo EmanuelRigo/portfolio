@@ -58,7 +58,7 @@ function ProjectCard({
               ))}
             </Badge>
 
-            <a href={linkGithub}>
+            <a target="blank" href={linkGithub}>
               <Badge
                 bg="dark"
                 className="position-absolute bottom-0 start-100 translate-middle"

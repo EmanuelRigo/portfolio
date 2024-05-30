@@ -9,6 +9,9 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { DiSqllite } from "react-icons/di";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
+
 
 import { FaBootstrap, FaSass } from "react-icons/fa";
 import { useState } from "react";
@@ -119,6 +122,21 @@ function Skills() {
               <BiLogoFirebase
                 className="icono firebase"
                 data-nombre="Firebase"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <BiLogoTailwindCss 
+                className="icono tailwind"
+                data-nombre="Tailwind"
+                onMouseEnter={handleChangeName}
+              />
+            </div>      <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <SiNextdotjs 
+                className="icono github"
+                data-nombre="Next"
                 onMouseEnter={handleChangeName}
               />
             </div>

@@ -11,7 +11,7 @@ import {
 import { DiSqllite } from "react-icons/di";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
-
+import { GrMysql } from "react-icons/gr";
 
 import { FaBootstrap, FaSass } from "react-icons/fa";
 import { useState } from "react";
@@ -127,16 +127,17 @@ function Skills() {
             </div>
             <div className="contenedor">
               <div className="circulo"></div>{" "}
-              <BiLogoTailwindCss 
+              <BiLogoTailwindCss
                 className="icono tailwind"
                 data-nombre="Tailwind"
                 onMouseEnter={handleChangeName}
               />
-            </div>      <div className="contenedor">
+            </div>{" "}
+            <div className="contenedor">
               <div className="circulo"></div>{" "}
-              <SiNextdotjs 
+              <SiNextdotjs
                 className="icono github"
-                data-nombre="Next"
+                data-nombre="NextJs"
                 onMouseEnter={handleChangeName}
               />
             </div>
@@ -182,9 +183,9 @@ function Skills() {
             </div>
             <div className="contenedor">
               <div className="circulo"></div>
-              <DiSqllite
+              <GrMysql
                 className="icono firebase"
-                data-nombre="Sqllite"
+                data-nombre="MySQL"
                 onMouseEnter={handleChangeName}
               />
             </div>

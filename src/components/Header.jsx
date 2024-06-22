@@ -19,10 +19,10 @@ function Header() {
             Hello, I'm a front-end dev, aiming for intuitive user experiences.
             Currently, enhancing backend skills.
           </p>
-          <button className="header__btn">
+          <a href="#contact" className="header__btn btn">
             <Image fluid src="../svg/brush.png" alt="" />
             <p className="text-warning">let's talk!</p>
-          </button>
+          </a>
         </Col>
         <Col
           lg={5}

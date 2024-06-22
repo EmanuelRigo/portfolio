@@ -11,9 +11,6 @@ import {
 import { TbApi } from "react-icons/tb";
 import { SiNextdotjs } from "react-icons/si";
 
-
-
-
 import { FaBootstrap } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
 
@@ -22,8 +19,7 @@ function ProjectContainer() {
     <Col id="projects" xs={12} className="bgd-transparent px-4">
       <Row className="custom-border p-0 py-4  ">
         <Col lg={6} className="px-md-3 order-md-2 p-0">
-          <h3 className="text-dark display-6">Mini Projects & 
-Practices</h3>
+          <h3 className="text-dark display-6">Mini Projects & Practices</h3>
           <ProjectCard
             image={"cafe 00.png"}
             name={"Cafe"}
@@ -33,7 +29,6 @@ Practices</h3>
             icons={[
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
-              <FaBootstrap className="project__icon" />,
             ]}
           ></ProjectCard>
           <ProjectCard
@@ -49,25 +44,27 @@ Practices</h3>
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
               <FaBootstrap className="project__icon" />,
+              <TbApi className="project__icon"></TbApi>,
             ]}
           ></ProjectCard>
-            <ProjectCard
+          <ProjectCard
             image={"NextCRUD.png"}
             name={"NextJS TS CRUD ToDoList"}
             description={
               "Build a ToDo List app in Next.js: create, read, update, and delete tasks with a user-friendly interface."
             }
-            linkGithub={"https://github.com/EmanuelRigo/ToDoList-NextJS-prisma-TS"}
+            linkGithub={
+              "https://github.com/EmanuelRigo/ToDoList-NextJS-prisma-TS"
+            }
             linkHosting={"https://to-do-list-next-js-prisma-ts.vercel.app/"}
             icons={[
               <BiLogoJavascript className="project__icon" />,
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
+              <BiLogoReact className="project__icon" />,
               <SiNextdotjs className="project__icon" />,
-              <BiLogoTypescript  className="project__icon" />,
-              <BiLogoTailwindCss className="project__icon"/>
-
-
+              <BiLogoTypescript className="project__icon" />,
+              <BiLogoTailwindCss className="project__icon" />,
             ]}
           ></ProjectCard>
         </Col>
@@ -132,7 +129,6 @@ Practices</h3>
               <AiFillHtml5 className="project__icon" />,
               <BiLogoCss3 className="project__icon" />,
               <BiLogoJavascript className="project__icon" />,
-             
             ]}
           />
         </Col>

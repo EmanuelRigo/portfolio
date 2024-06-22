@@ -1,10 +1,12 @@
 import { Accordion, Image, Col } from "react-bootstrap";
+import { PiCertificateLight } from "react-icons/pi";
 
 function AccordionCertificate() {
   return (
     <Accordion className="px-0 overflow-hidden bgd-transparent mb-4">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
+          <PiCertificateLight className="certificate__icon me-2" />
           Javascript certificate by Coderhouse
         </Accordion.Header>
         <Accordion.Body>
@@ -18,7 +20,10 @@ function AccordionCertificate() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>ReactJs certificate by Coderhouse</Accordion.Header>
+        <Accordion.Header>
+          <PiCertificateLight className="certificate__icon me-2" />
+          ReactJs certificate by Coderhouse
+        </Accordion.Header>
         <Accordion.Body>
           <Col md={8} className="mx-auto">
             <Image

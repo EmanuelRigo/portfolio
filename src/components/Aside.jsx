@@ -1,6 +1,12 @@
 import { BsGithub, BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import { PiFolderSimpleUserLight } from "react-icons/pi";
+import {
+  PiFolderSimpleUserLight,
+  PiUserListLight,
+  PiWhatsappLogoLight,
+  PiEnvelopeLight,
+} from "react-icons/pi";
+import { GrDocumentUser } from "react-icons/gr";
 
 function Aside() {
   return (
@@ -22,21 +28,35 @@ function Aside() {
           className="aside__container"
         >
           <i>
-            <BsWhatsapp />
+            <PiWhatsappLogoLight />
           </i>
           <p className="py-2">+54 9 11 6269 9719</p>
         </a>
-        <a href="#contact" className="aside__container">
+        <a
+          target="blank"
+          href="mailto:emanuel.r-dev@outlook.com"
+          className="aside__container"
+        >
           <i>
-            <AiOutlineMail></AiOutlineMail>
+            <PiEnvelopeLight></PiEnvelopeLight>
           </i>
-          <p className="py-2">emanuel-rigo@outlook.com.ar</p>
+          <p className="py-2">emanuel.r-dev@outlook.com</p>
         </a>
         <a href="#projects" className="aside__container">
           <i>
             <PiFolderSimpleUserLight></PiFolderSimpleUserLight>
           </i>
           <p className="py-2">Projects</p>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1awNM76l6G1OIzGQlevxqA4IwFq_mykb4/view?usp=drive_link"
+          target="blank"
+          className="aside__container"
+        >
+          <i>
+            <PiUserListLight />
+          </i>
+          <p className="py-2">C.V.</p>
         </a>
       </div>
     </div>

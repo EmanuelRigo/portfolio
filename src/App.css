@@ -95,6 +95,10 @@ header {
   margin-bottom: 0;
 }
 
+.certificate__icon {
+  font-size: 35px;
+  color: #100e0e;
+}
 /*/////*/
 
 /*/////Header///*/
@@ -124,6 +128,7 @@ header {
 .header__btn {
   border: none;
   background-color: transparent;
+  transition: 0.2s;
 }
 
 .header__btn img {
@@ -138,7 +143,7 @@ header {
   transition: 0.1s;
 }
 
-.header__btn:hover p {
+.header__btn:hover {
   transform: scale(1.1);
 }
 

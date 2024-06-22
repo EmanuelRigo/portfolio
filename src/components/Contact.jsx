@@ -7,7 +7,7 @@ function Contact() {
     <>
       <Form
         id="contact"
-        action="https://formsubmit.co/7c13df067862f16dec6aa154c8c5a946"
+        action="https://formsubmit.co/70ce9dbd3ca2531867135cc4f5555cd2"
         method="POST"
         className="Row justify-content-center p-4 mx-3 mt-5 bgd-transparent form__contact"
       >
@@ -26,7 +26,7 @@ john doe"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label className="text-dark">Email address</Form.Label>
+          <Form.Label className="text-dark">Your email address</Form.Label>
           <Form.Control
             name="email"
             type="email"

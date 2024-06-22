@@ -46,7 +46,11 @@ john doe"
           <Image fluid src="../svg/brush2.png" alt="" />
           <p className="text-warning">send Message</p>
         </button>
-        <input type="hidden" name="_next" value="http://localhost:3000/" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://portfolio-nine-nu-91.vercel.app/"
+        />
         <input type="hidden" name="_captcha" value="false" />
       </Form>
     </>

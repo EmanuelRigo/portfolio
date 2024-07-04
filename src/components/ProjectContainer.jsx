@@ -66,6 +66,26 @@ function ProjectContainer() {
               <BiLogoTypescript className="project__icon" />,
               <BiLogoTailwindCss className="project__icon" />,
             ]}
+          ></ProjectCard>{" "}
+          <ProjectCard
+            image={"teslo-shop 00.png"}
+            name={"Teslo shop"}
+            description={
+              "E-commerce nextjs. replica of the tesla store. Practice with Fernando Herrera"
+            }
+            linkGithub={
+              "https://github.com/EmanuelRigo/Practica-NextJS-teslo-shop.git"
+            }
+            linkHosting={"https://practica-next-js-teslo-shop.vercel.app/"}
+            icons={[
+              <BiLogoJavascript className="project__icon" />,
+              <AiFillHtml5 className="project__icon" />,
+              <BiLogoCss3 className="project__icon" />,
+              <BiLogoReact className="project__icon" />,
+              <SiNextdotjs className="project__icon" />,
+              <BiLogoTypescript className="project__icon" />,
+              <BiLogoTailwindCss className="project__icon" />,
+            ]}
           ></ProjectCard>
         </Col>
         <Col lg={6} className="px-md-3 order-md-1 p-0">

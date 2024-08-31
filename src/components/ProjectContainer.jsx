@@ -10,6 +10,7 @@ import {
 } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
 import { SiNextdotjs } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 
 import { FaBootstrap } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
@@ -150,6 +151,18 @@ function ProjectContainer() {
               <BiLogoCss3 className="project__icon" />,
               <BiLogoJavascript className="project__icon" />,
             ]}
+          />
+          <ProjectCard
+            image={"../images/SQL coder.png"}
+            name={"First personal SQL project"}
+            description={
+              "SQL project for managing a lab, with functions and procedures for tests and results."
+            }
+            linkGithub="https://github.com/EmanuelRigo/entrega-final-sql-coderhouse"
+            linkHosting={
+              "https://github.com/EmanuelRigo/entrega-final-sql-coderhouse"
+            }
+            icons={[<GrMysql className="project__icon" />]}
           />
         </Col>
       </Row>

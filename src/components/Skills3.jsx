@@ -62,7 +62,6 @@ function Skills() {
               />
             </div>
           </Col>
-
           <Col xs={"auto"} className="d-flex p-0">
             <div className="contenedor">
               <div className="circulo"></div>{" "}
@@ -141,6 +140,16 @@ function Skills() {
                 onMouseEnter={handleChangeName}
               />
             </div>
+          </Col>{" "}
+          <Col xs={"auto"} className="d-flex p-0">
+            <div className="contenedor">
+              <div className="circulo"></div>{" "}
+              <GrMysql
+                className="icono firebase"
+                data-nombre="MySQL"
+                onMouseEnter={handleChangeName}
+              />
+            </div>
           </Col>
         </Row>
       </Col>
@@ -178,14 +187,6 @@ function Skills() {
               <BiLogoTypescript
                 className="icono firebase"
                 data-nombre="TypeScript"
-                onMouseEnter={handleChangeName}
-              />
-            </div>
-            <div className="contenedor">
-              <div className="circulo"></div>
-              <GrMysql
-                className="icono firebase"
-                data-nombre="MySQL"
                 onMouseEnter={handleChangeName}
               />
             </div>

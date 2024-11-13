@@ -48,6 +48,21 @@ function AccordionCertificate() {
             ></Image>
           </Col>
         </Accordion.Body>
+      </Accordion.Item> 
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>
+          <PiCertificateLight className="certificate__icon me-2" />
+          Backend 1 certificate by Coderhouse
+        </Accordion.Header>
+        <Accordion.Body>
+          <Col md={8} className="mx-auto">
+            <Image
+              rounded
+              fluid
+              src="../images/6735069133356916d876914d.png"
+            ></Image>
+          </Col>
+        </Accordion.Body>
       </Accordion.Item>
     </Accordion>
   );

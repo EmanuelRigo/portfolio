@@ -16,10 +16,10 @@ export default function RootLayout({
       <body className="">
         {/* Sidebar */}
         <div className="w-full h-screen bg-black flex justify-center items-center">
-          <div className="container bg-neutral-900 rounded-lg h-[700px] flex p-8 flex-col ">
+          <div className="container bg-neutral-900 rounded-lg h-[700px] flex p-6 flex-col ">
             {/* Header */}
             <div className="w-full flex justify-center items-center">
-              <Header />
+              {/* <Header /> */}
             </div>
             {/* Columna principal */}
             <div className="flex w-full h-full">
@@ -37,15 +37,20 @@ export default function RootLayout({
                       />
                     </div>
                   </div>
-                  <div className="flex flex-grow flex-col">
-                    <Hero />
+                  <div className="flex flex-grow ">
+                    <div className="w-6/12 ">
+                      <Hero />
+                    </div>
+                    <div className="w-6/12  flex items-center justify-center">
+                      <Header />
+                    </div>
                   </div>
                 </div>
 
                 {/* Contenido que ocupa el resto */}
                 <div className="flex-grow   flex overflow-hidden">
                   <InfoColumn></InfoColumn>
-                  <main className="flex-grow overflow-y-auto scrollbar-hide">
+                  <main className="flex-grow overflow-y-auto scrollbar-hide w-min">
                     {children}
                   </main>
                 </div>

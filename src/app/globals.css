@@ -33,3 +33,16 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome/Safari/Webkit */
 }
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.scrolling-icons {
+  animation: scroll-loop 40s linear infinite;
+}

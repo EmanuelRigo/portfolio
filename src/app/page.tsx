@@ -1,17 +1,40 @@
-import React from "react";
+import ProjectCard from "@/components/ProjectCard";
 
 const page = () => {
   return (
     <div className="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch  px-6  text-black">
-      <div className=" bg-neutral-800 rounded-lg h-44">1</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">2</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">3</div>{" "}
-      <div className=" bg-neutral-800 rounded-lg h-44">4</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">5</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">6</div>{" "}
-      <div className=" bg-neutral-800 rounded-lg h-44">7</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">8</div>
-      <div className=" bg-neutral-800 rounded-lg h-44">9</div>
+      <ProjectCard
+        title="MovieList App"
+        description="A simple weather forecast app using OpenWeather API."
+        image="/images/movielist1.png"
+        techStack={[
+          "NextJs",
+          "Tailwind",
+          "TypeScript",
+          "React",
+          "MongoDB",
+          "Javascript",
+          "NodeJs",
+        ]}
+        liveLink="https://movie-list-jade-kappa.vercel.app/"
+        repoLink="https://github.com/EmanuelRigo/MovieList"
+      />{" "}
+      <ProjectCard
+        title="Weather App"
+        description="A sdf fsdafasasdfasdfas fas sdfasfdasf asdfasdfaa asdfasf sfasdfasdfasf."
+        image="/images/foto.jpg"
+        techStack={["Next.js", "Tailwind", "TypeScript"]}
+        liveLink="https://my-weather.vercel.app"
+        repoLink="https://github.com/tuusuario/weather-app"
+      />{" "}
+      <ProjectCard
+        title="Weather App"
+        description="A asdfas asdfasdf asdfasdf afas Aasdfasdf afasdfa  asdfasdfPI."
+        image="/images/foto.jpg"
+        techStack={["Next.js", "Tailwind", "TypeScript"]}
+        liveLink="https://my-weather.vercel.app"
+        repoLink="https://github.com/tuusuario/weather-app"
+      />
     </div>
   );
 };

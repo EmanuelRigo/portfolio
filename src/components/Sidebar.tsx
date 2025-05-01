@@ -1,4 +1,5 @@
-// components/Sidebar.tsx
+"use client";
+
 import {
   FaReact,
   FaHtml5,
@@ -9,106 +10,104 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { DiGit, DiMysql, DiPostgresql } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMongodb,
+} from "react-icons/si";
 import Link from "next/link";
+
+const iconLinks = [
+  {
+    icon: <FaReact className="text-3xl" />,
+    label: "ReactJS",
+    color: "text-cyan-400",
+  },
+  {
+    icon: <FaHtml5 className="text-3xl" />,
+    label: "HTML",
+    color: "text-orange-500",
+  },
+  {
+    icon: <FaCss3Alt className="text-3xl" />,
+    label: "CSS",
+    color: "text-blue-500",
+  },
+  {
+    icon: <FaJs className="text-3xl" />,
+    label: "JavaScript",
+    color: "text-yellow-400",
+  },
+  {
+    icon: <SiTypescript className="text-3xl" />,
+    label: "TypeScript",
+    color: "text-blue-600",
+  },
+  {
+    icon: <FaNodeJs className="text-3xl" />,
+    label: "NodeJS",
+    color: "text-green-500",
+  },
+  {
+    icon: <DiGit className="text-3xl" />,
+    label: "Git",
+    color: "text-orange-600",
+  },
+  {
+    icon: <FaGithub className="text-3xl" />,
+    label: "GitHub",
+    color: "text-gray-200",
+  },
+  {
+    icon: <DiMysql className="text-3xl" />,
+    label: "MySQL",
+    color: "text-blue-600",
+  },
+  {
+    icon: <DiPostgresql className="text-3xl" />,
+    label: "PostgreSQL",
+    color: "text-blue-400",
+  },
+  {
+    icon: <SiTailwindcss className="text-3xl" />,
+    label: "TailwindCSS",
+    color: "text-cyan-300",
+  },
+  {
+    icon: <FaBootstrap className="text-3xl" />,
+    label: "Bootstrap",
+    color: "text-purple-500",
+  },
+  {
+    icon: <SiNextdotjs className="text-3xl" />,
+    label: "NextJS",
+    color: "text-white",
+  },
+  {
+    icon: <SiMongodb className="text-3xl" />,
+    label: "MongoDB",
+    color: "text-green-400",
+  },
+];
 
 const Sidebar = () => {
   return (
-    <div className="w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center py-4 rounded-lg">
-      {/* Iconos */}
-      <nav className="flex flex-col items-center space-y-6">
-        <Link
-          href="#"
-          aria-label="ReactJS"
-          className="hover:text-cyan-400 transition-colors duration-200"
-        >
-          <FaReact className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="HTML"
-          className="hover:text-orange-500 transition-colors duration-200"
-        >
-          <FaHtml5 className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="CSS"
-          className="hover:text-blue-500 transition-colors duration-200"
-        >
-          <FaCss3Alt className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="JavaScript"
-          className="hover:text-yellow-400 transition-colors duration-200"
-        >
-          <FaJs className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="TypeScript"
-          className="hover:text-blue-600 transition-colors duration-200"
-        >
-          <SiTypescript className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="NodeJS"
-          className="hover:text-green-500 transition-colors duration-200"
-        >
-          <FaNodeJs className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="Git"
-          className="hover:text-orange-600 transition-colors duration-200"
-        >
-          <DiGit className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="GitHub"
-          className="hover:text-gray-200 transition-colors duration-200"
-        >
-          <FaGithub className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="MySQL"
-          className="hover:text-blue-600 transition-colors duration-200"
-        >
-          <DiMysql className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="PostgreSQL"
-          className="hover:text-blue-400 transition-colors duration-200"
-        >
-          <DiPostgresql className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="TailwindCSS"
-          className="hover:text-cyan-300 transition-colors duration-200"
-        >
-          <SiTailwindcss className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="Bootstrap"
-          className="hover:text-purple-500 transition-colors duration-200"
-        >
-          <FaBootstrap className="text-5xl" />
-        </Link>
-        <Link
-          href="#"
-          aria-label="NextJS"
-          className="hover:text-white transition-colors duration-200"
-        >
-          <SiNextdotjs className="text-5xl" />
-        </Link>
-      </nav>
+    <div className="w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center rounded-lg p-4 overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
+        <div className="scrolling-icons absolute top-0 left-0 w-full flex flex-col">
+          {[...iconLinks, ...iconLinks].map((item, idx) => (
+            <Link
+              href="#"
+              key={idx}
+              aria-label={item.label}
+              className={`my-3 hover:${item.color}  transition-colors duration-700 flex justify-center`}
+            >
+              {item.icon}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

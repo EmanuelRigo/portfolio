@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { useAppContext } from "@/app/context/AppContext";
 
 interface ProjectCardProps {
   title: string;
@@ -23,7 +24,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const techStackRef = useRef<HTMLDivElement>(null);
 
+  const { setHoveredIcons, hoveredIcons } = useAppContext();
+
   const handleMouseEnter = () => {
+    if (techStack) {
+      setHoveredIcons(techStack);
+
+      console.log("🚀 ~ handleMouseEnter ~ techStack:", techStack);
+      console.log("hovered icnos", hoveredIcons);
+    }
+
     if (techStackRef.current) {
       techStackRef.current.scrollTo({
         top: techStackRef.current.scrollHeight,
@@ -33,6 +43,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   const handleMouseLeave = () => {
+    setHoveredIcons([]);
+
     if (techStackRef.current) {
       techStackRef.current.scrollTo({
         top: 0,

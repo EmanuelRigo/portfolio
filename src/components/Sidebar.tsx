@@ -1,5 +1,7 @@
 "use client";
 
+import { useAppContext } from "@/app/context/AppContext";
+import Link from "next/link";
 import {
   FaReact,
   FaHtml5,
@@ -16,84 +18,99 @@ import {
   SiTypescript,
   SiMongodb,
 } from "react-icons/si";
-import Link from "next/link";
 
 const iconLinks = [
   {
     icon: <FaReact className="text-3xl" />,
     label: "ReactJS",
     color: "text-cyan-400",
+    colorHover: "hover:text-cyan-400",
   },
   {
     icon: <FaHtml5 className="text-3xl" />,
     label: "HTML",
     color: "text-orange-500",
+    colorHover: "hover:text-orange-500",
   },
   {
     icon: <FaCss3Alt className="text-3xl" />,
     label: "CSS",
     color: "text-blue-500",
+    colorHover: "hover:text-blue-500",
   },
   {
     icon: <FaJs className="text-3xl" />,
     label: "JavaScript",
     color: "text-yellow-400",
+    colorHover: "hover:text-yellow-400",
   },
   {
     icon: <SiTypescript className="text-3xl" />,
     label: "TypeScript",
     color: "text-blue-600",
+    colorHover: "hover:text-blue-600",
   },
   {
     icon: <FaNodeJs className="text-3xl" />,
     label: "NodeJS",
     color: "text-green-500",
+    colorHover: "hover:text-green-500",
   },
   {
     icon: <DiGit className="text-3xl" />,
     label: "Git",
     color: "text-orange-600",
+    colorHover: "hover:text-orange-600",
   },
   {
     icon: <FaGithub className="text-3xl" />,
     label: "GitHub",
     color: "text-gray-200",
+    colorHover: "hover:text-gray-200",
   },
   {
     icon: <DiMysql className="text-3xl" />,
     label: "MySQL",
     color: "text-blue-600",
+    colorHover: "hover:text-blue-600",
   },
   {
     icon: <DiPostgresql className="text-3xl" />,
     label: "PostgreSQL",
     color: "text-blue-400",
+    colorHover: "hover:text-blue-400",
   },
   {
     icon: <SiTailwindcss className="text-3xl" />,
-    label: "TailwindCSS",
+    label: "Tailwind",
     color: "text-cyan-300",
+    colorHover: "hover:text-cyan-300",
   },
   {
     icon: <FaBootstrap className="text-3xl" />,
     label: "Bootstrap",
     color: "text-purple-500",
+    colorHover: "hover:text-purple-500",
   },
   {
     icon: <SiNextdotjs className="text-3xl" />,
     label: "NextJS",
     color: "text-white",
+    colorHover: "hover:text-white",
   },
   {
     icon: <SiMongodb className="text-3xl" />,
     label: "MongoDB",
     color: "text-green-400",
+    colorHover: "hover:text-green-400",
   },
 ];
 
 const Sidebar = () => {
+  const { setHoveredIcon, hoveredIcons } = useAppContext();
+
   return (
-    <div className="w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center rounded-lg p-4 overflow-hidden">
+    <div className="w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center rounded-lg py-4 overflow-hidden">
       <div className="relative w-full h-full overflow-hidden">
         <div className="scrolling-icons absolute top-0 left-0 w-full flex flex-col">
           {[...iconLinks, ...iconLinks].map((item, idx) => (
@@ -101,7 +118,12 @@ const Sidebar = () => {
               href="#"
               key={idx}
               aria-label={item.label}
-              className={`my-3 hover:${item.color}  transition-colors duration-700 flex justify-center`}
+              className={`${item.colorHover} ${
+                hoveredIcons.includes(item.label)
+                  ? item.color
+                  : "text-neutral-700"
+              } $ñ py-3 px-4 transition-colors duration-700 flex justify-center  `}
+              onMouseEnter={() => setHoveredIcon(item.label)}
             >
               {item.icon}
             </Link>

@@ -8,13 +8,13 @@ const page = () => {
         description="A simple weather forecast app using OpenWeather API."
         image="/images/movielist1.png"
         techStack={[
-          "NextJs",
+          "NextJS",
           "Tailwind",
           "TypeScript",
-          "React",
+          "ReactJS",
           "MongoDB",
-          "Javascript",
-          "NodeJs",
+          "JavaScript",
+          "NodeJS",
         ]}
         liveLink="https://movie-list-jade-kappa.vercel.app/"
         repoLink="https://github.com/EmanuelRigo/MovieList"
@@ -23,7 +23,7 @@ const page = () => {
         title="Weather App"
         description="A sdf fsdafasasdfasdfas fas sdfasfdasf asdfasdfaa asdfasf sfasdfasdfasf."
         image="/images/foto.jpg"
-        techStack={["Next.js", "Tailwind", "TypeScript"]}
+        techStack={["NextJS", "Tailwind", "TypeScript"]}
         liveLink="https://my-weather.vercel.app"
         repoLink="https://github.com/tuusuario/weather-app"
       />{" "}

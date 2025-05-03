@@ -44,5 +44,5 @@ body {
 }
 
 .scrolling-icons {
-  animation: scroll-loop 10s linear infinite;
+  animation: scroll-loop 15s linear infinite;
 }

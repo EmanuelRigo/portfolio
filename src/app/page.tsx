@@ -18,7 +18,39 @@ const page = () => {
         ]}
         liveLink="https://movie-list-jade-kappa.vercel.app/"
         repoLink="https://github.com/EmanuelRigo/MovieList"
-      />{" "}
+      />
+      <ProjectCard
+        title="MovieList App"
+        description="A simple weather forecast app using OpenWeather API."
+        image="/images/movielist1.png"
+        techStack={[
+          "NextJS",
+          "Tailwind",
+          "TypeScript",
+          "ReactJS",
+          "MongoDB",
+          "JavaScript",
+          "NodeJS",
+        ]}
+        liveLink="https://movie-list-jade-kappa.vercel.app/"
+        repoLink="https://github.com/EmanuelRigo/MovieList"
+      />
+      <ProjectCard
+        title="MovieList App"
+        description="A simple weather forecast app using OpenWeather API."
+        image="/images/movielist1.png"
+        techStack={[
+          "NextJS",
+          "Tailwind",
+          "TypeScript",
+          "ReactJS",
+          "MongoDB",
+          "JavaScript",
+          "NodeJS",
+        ]}
+        liveLink="https://movie-list-jade-kappa.vercel.app/"
+        repoLink="https://github.com/EmanuelRigo/MovieList"
+      />
       <ProjectCard
         title="Weather App"
         description="A sdf fsdafasasdfasdfas fas sdfasfdasf asdfasdfaa asdfasf sfasdfasdfasf."

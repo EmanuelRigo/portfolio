@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const page = () => {
   return (
-    <div className="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch  px-6  text-black">
+    <div className="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch px-6 text-black animate-fadeIn">
       <ProjectCard
         title="MovieList App"
         description="A simple weather forecast app using OpenWeather API."

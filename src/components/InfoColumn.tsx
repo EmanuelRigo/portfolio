@@ -30,7 +30,7 @@ const InfoColumn = () => {
 
       {/* CV */}
       <a
-        href="/cv/emanuel-rigo-cv.pdf"
+        href="/cv/C.V. Emanuel Rigo.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center space-x-2 hover:text-green-400 transition-colors"

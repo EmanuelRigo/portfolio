@@ -1,5 +1,10 @@
 import ProjectCard from "@/components/ProjectCard";
 
+export const metadata = {
+  title: "Mi Portafolio ",
+  description: "Página de contacto para que puedas comunicarte conmigo.",
+};
+
 const page = () => {
   return (
     <div className="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch px-6 text-black animate-fadeIn">

@@ -1,10 +1,10 @@
-"use client";
-
 import CertificateCard from "@/components/CertificateCard";
 import React from "react";
-import { HiOutlineDocumentCheck } from "react-icons/hi2";
-import { FaMedal } from "react-icons/fa";
-import Image from "next/image";
+
+export const metadata = {
+  title: "Mi Portafolio | Cortificados",
+  description: "Página de contacto para que puedas comunicarte conmigo.",
+};
 
 const certificates = [
   {

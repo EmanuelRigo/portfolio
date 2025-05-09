@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 
 // ✅ Metadata para esta página
 export const metadata = {
-  title: "Mi Portafolio | Contacto",
+  title: "Emanuel R. | Contacto",
   description: "Página de contacto para que puedas comunicarte conmigo.",
 };
 

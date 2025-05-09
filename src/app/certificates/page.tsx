@@ -2,7 +2,7 @@ import CertificateCard from "@/components/CertificateCard";
 import React from "react";
 
 export const metadata = {
-  title: "Mi Portafolio | Cortificados",
+  title: "Emanuel R. | Cortificados",
   description: "Página de contacto para que puedas comunicarte conmigo.",
 };
 

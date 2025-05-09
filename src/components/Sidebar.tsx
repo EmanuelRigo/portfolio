@@ -110,7 +110,7 @@ const Sidebar = () => {
   const { setHoveredIcon, hoveredIcons } = useAppContext();
 
   return (
-    <div className="w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center rounded-lg  overflow-hidden py-4">
+    <div className="w-10 md:w-20 h-full bg-neutral-800 text-neutral-700 flex flex-col items-center rounded-lg overflow-hidden py-4">
       <div className="relative w-full h-full overflow-hidden mask-y-from-70%">
         <div className="scrolling-icons absolute top-0 left-0 w-full flex flex-col">
           {[...iconLinks, ...iconLinks].map((item, idx) => (
@@ -122,7 +122,7 @@ const Sidebar = () => {
                 hoveredIcons.includes(item.label)
                   ? item.color
                   : "text-neutral-700"
-              } $ñ py-3 px-4 transition-colors duration-700 flex justify-center  `}
+              } $ñ py-1 md:py-3 px-3 md:px-4 transition-colors duration-700 flex justify-center  `}
               onMouseEnter={() => setHoveredIcon(item.label)}
             >
               {item.icon}

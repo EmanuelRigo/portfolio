@@ -18,7 +18,7 @@ export default function RootLayout({
         <body className="">
           {/* Sidebar */}
           <div className="w-full h-screen bg-black flex justify-center items-center">
-            <div className="container bg-neutral-900 rounded-lg h-[700px] flex p-6 flex-col ">
+            <div className="container bg-neutral-900 rounded-lg  h-full md:h-[700px] flex p-6 flex-col ">
               {/* Header */}
               <div className="w-full flex justify-center items-center">
                 {/* <Header /> */}
@@ -28,7 +28,7 @@ export default function RootLayout({
                 <div className="flex flex-col h-full flex-grow gap-6">
                   {/* Header fijo */}
                   <div className="h-44 w-full  flex">
-                    <div className="w-44 h-44 ">
+                    <div className="w-44 h-44 hidden md:block">
                       <div className="rounded-lg w-full h-full border-2 border-neutral-800 overflow-hidden">
                         <Image
                           src="/images/foto.jpg"
@@ -39,11 +39,11 @@ export default function RootLayout({
                         />
                       </div>
                     </div>
-                    <div className="flex flex-grow ">
-                      <div className="w-6/12 ">
+                    <div className="flex flex-col md:flex-row flex-grow ">
+                      <div className="w-full md:w-6/12 ">
                         <Hero />
                       </div>
-                      <div className="w-6/12  flex items-center justify-center">
+                      <div className="w-full md:w-6/12 mt-4 md:mt-0  flex items-center justify-center">
                         <Header />
                       </div>
                     </div>

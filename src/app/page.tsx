@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 
 export const metadata = {
-  title: "Mi Portafolio ",
+  title: "Emanuel R.",
   description: "Página de contacto para que puedas comunicarte conmigo.",
 };
 

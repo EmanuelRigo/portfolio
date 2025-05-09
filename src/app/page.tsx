@@ -7,7 +7,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="grid md:grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch pe-3  md:px-6 text-black animate-fadeIn">
+    <div className="grid md:grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch pe-5  md:px-6 text-black animate-fadeIn">
       <ProjectCard
         title="MovieList App"
         description="A simple weather forecast app using OpenWeather API."

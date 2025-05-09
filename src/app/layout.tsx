@@ -18,7 +18,7 @@ export default function RootLayout({
         <body className="">
           {/* Sidebar */}
           <div className="w-full h-screen bg-black flex justify-center items-center">
-            <div className="container bg-neutral-900 rounded-lg  h-full md:h-[700px] flex p-6 flex-col ">
+            <div className="container bg-neutral-900 rounded-lg h-full md:h-[700px] flex p-6 flex-col ">
               {/* Header */}
               <div className="w-full flex justify-center items-center">
                 {/* <Header /> */}
@@ -27,7 +27,7 @@ export default function RootLayout({
               <div className="flex w-full h-full">
                 <div className="flex flex-col h-full flex-grow gap-6">
                   {/* Header fijo */}
-                  <div className="h-44 w-full  flex">
+                  <div className="md:h-44 w-full  flex">
                     <div className="w-44 h-44 hidden md:block">
                       <div className="rounded-lg w-full h-full border-2 border-neutral-800 overflow-hidden">
                         <Image
@@ -50,9 +50,9 @@ export default function RootLayout({
                   </div>
 
                   {/* Contenido que ocupa el resto */}
-                  <div className="flex-grow   flex overflow-hidden">
+                  <div className="flex-grow flex flex-col md:flex-row w-full  overflow-hidden">
                     <InfoColumn></InfoColumn>
-                    <main className="flex-grow overflow-y-auto scrollbar-hide w-min">
+                    <main className="flex-grow overflow-y-auto scrollbar-hide w-full md:w-min order-1 ">
                       {children}
                     </main>
                   </div>

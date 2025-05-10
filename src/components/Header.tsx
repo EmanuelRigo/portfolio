@@ -12,7 +12,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full text-black flex justify-start items-center ps-5 bg-yellow-400 py-4 rounded-s-lg md:mb-18">
+    <div className="w-full text-black flex justify-start items-center ps-5 bg-yellow-400 py-2 md:py-4 rounded-s-lg md:mb-18">
       <nav className="flex space-x-4">
         {navLinks.map((link) => (
           <Link

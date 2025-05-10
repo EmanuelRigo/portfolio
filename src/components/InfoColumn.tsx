@@ -21,9 +21,9 @@ const InfoColumn = () => {
   };
 
   return (
-    <div className="w-full md:w-44 md:h-full  bg-neutral-800 text-white rounded-lg p-4 flex md:flex-col  items-start space-y-6 text-sm order-2 md:order-1">
+    <div className="w-full md:w-44  md:h-full  md:bg-neutral-800 text-white rounded-lg pe-5 md:p-4 flex md:flex-col space-y-6 text-sm order-2 md:order-1 items-center md:items-start  justify-between md:justify-start ">
       {/* Ubicación */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 mb-0 md:mb-4">
         <FaMapMarkerAlt />
         <span>Buenos Aires - Arg</span>
       </div>
@@ -33,10 +33,10 @@ const InfoColumn = () => {
         href="/cv/C.V. Emanuel Rigo.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center space-x-2 hover:text-green-400 transition-colors"
+        className="flex items-center space-x-2 hover:text-green-400 transition-colors mb-0 md:mb-4"
       >
         <FaFileAlt />
-        <span>Download CV</span>
+        <span>CV</span>
       </a>
 
       {/* LinkedIn */}
@@ -44,14 +44,14 @@ const InfoColumn = () => {
         href="https://www.linkedin.com/in/emanuelrigo"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+        className="flex items-center space-x-2 hover:text-blue-400 transition-colors mb-0 md:mb-4"
       >
         <FaLinkedin />
         <span>LinkedIn</span>
       </a>
 
       {/* Email */}
-      <div className="flex flex-col space-y-1">
+      <div className="md:flex flex-col space-y-1 mb-0 hidden ">
         <button
           onClick={() => setShowEmail(!showEmail)}
           className="flex items-center space-x-2 hover:text-cyan-400 transition-colors"
@@ -64,7 +64,7 @@ const InfoColumn = () => {
             <p className="text-neutral-300 text-xs">{email}</p>
             <button
               onClick={handleCopy}
-              className="hover:text-lime-400 transition-colors"
+              className="hover:text-lime-400 transition-colors md:mb-4"
               title="Copiar al portapapeles"
             >
               <IoCopyOutline />

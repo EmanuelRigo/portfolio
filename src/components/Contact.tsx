@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="pe-5 md:px-4 text-neutral-200 animate-fadeIn"
+      className="md:px-4 text-neutral-200 animate-fadeIn"
     >
       <div className="mb-4">
         <label

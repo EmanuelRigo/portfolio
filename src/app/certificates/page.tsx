@@ -46,7 +46,7 @@ const certificates = [
 
 const Page = () => {
   return (
-    <div className="flex flex-col  w-full pe-5 md:px-4 gap-2 md:gap-4 animate-fadeIn">
+    <div className="flex flex-col  w-full md:px-4 gap-2 md:gap-4 animate-fadeIn h-full">
       {certificates.map((cert, idx) => (
         <CertificateCard
           key={idx}

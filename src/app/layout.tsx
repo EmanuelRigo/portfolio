@@ -50,9 +50,9 @@ export default function RootLayout({
                   </div>
 
                   {/* Contenido que ocupa el resto */}
-                  <div className="flex-grow flex flex-col md:flex-row w-full  overflow-hidden">
+                  <div className="flex-grow flex flex-col md:flex-row w-full overflow-hidden gap-4 md:gap-0">
                     <InfoColumn></InfoColumn>
-                    <main className="flex-grow overflow-y-auto scrollbar-hide w-full md:w-min order-1 ">
+                    <main className="flex-grow overflow-y-auto scrollbar-hide md:w-min order-1 rounded-lg  me-5 md:me-0 md:pe-0  h-full">
                       {children}
                     </main>
                   </div>

@@ -55,12 +55,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div
-      className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex max-w-xl w-full h-48 p-2"
+      className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-48 p-2 gap-4"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {image && (
-        <div className="relative w-48 h-full flex-shrink-0">
+        <div className="relative w-32 h-full md:w-48 md:h-full flex-shrink-0">
           <Image
             src={image}
             alt={title}
@@ -70,10 +70,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           />
         </div>
       )}
-      <div className="ps-4 py-1 flex flex-col flex-1 overflow-hidden">
+      <div className="pt-2 md:ps-4 md:py-1 flex flex-col flex-1 overflow-hidden">
         <div className="flex flex-col overflow-hidden flex-1">
           <h3 className="text-lg font-semibold mb-1 flex-shrink-0">{title}</h3>
-          <p className="text-sm text-neutral-300 mb-2  flex-shrink-0">
+          <p className="text-sm text-neutral-300 mb-2 flex-shrink-0 hidden md:block">
             {description}
           </p>
 

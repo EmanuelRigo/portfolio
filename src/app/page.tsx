@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "Emanuel R. Portfolio",
     images: [
       {
-        url: "https://portfolio-dusky-rho-64.vercel.app/images/openGraph-image.png", // imagen pública y accesible
+        url: "https://portfolio-dusky-rho-64.vercel.app/favicon.ico", // imagen pública y accesible
         width: 1200,
         height: 630,
         alt: "Vista previa del portafolio de Emanuel R.",

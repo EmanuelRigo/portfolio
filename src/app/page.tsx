@@ -3,6 +3,36 @@ import ProjectCard from "@/components/ProjectCard";
 export const metadata = {
   title: "Emanuel R.",
   description: "Página de contacto para que puedas comunicarte conmigo.",
+  keywords: [
+    "Emanuel Rigo",
+    "portafolio",
+    "desarrollador web",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "proyectos de desarrollo",
+    "fullstack",
+    "MongoDB",
+    "Node.js",
+  ],
+  openGraph: {
+    title: "Emanuel R. | Desarrollador Web",
+    description:
+      "Portafolio personal de Emanuel Rigo, desarrollador web fullstack.",
+    url: "https://portfolio-dusky-rho-64.vercel.app/m", // reemplazalo con tu URL real
+    siteName: "Emanuel R. Portfolio",
+    images: [
+      {
+        url: "https://tusitio.com/images/preview.png", // imagen pública y accesible
+        width: 1200,
+        height: 630,
+        alt: "Vista previa del portafolio de Emanuel R.",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
 };
 
 const page = () => {

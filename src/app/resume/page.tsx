@@ -20,6 +20,8 @@ import {
   SiTypescript,
   SiDbeaver,
   SiPostgresql,
+  SiPostman,
+  SiDocker,
 } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
@@ -56,13 +58,15 @@ const skills = {
     },
     { name: "Linux", icon: <FaLinux className="text-black" /> },
     { name: "DBeaver", icon: <SiDbeaver className="text-orange-900" /> },
+    { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
     { name: "Inglés B1", icon: <FaLanguage className="text-green-400" /> },
   ],
 };
 
 const ResumePage = () => {
   return (
-    <section className=" text-neutral-100 h-full bg-neutral-900 ">
+    <section className=" text-neutral-100 h-full bg-neutral-900  animate-fadeIn ">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full w-full md:px-6">
         {Object.entries(skills).map(([category, items]) => (
           <div

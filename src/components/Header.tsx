@@ -9,11 +9,12 @@ const Header = () => {
     { href: "/", label: "Projects" },
     { href: "/certificates", label: "Certificates" },
     { href: "/contact-me", label: "ContactMe" },
+    { href: "/resume", label: "Resume" },
   ];
 
   return (
-    <div className="w-full text-black flex justify-start items-center ps-5 bg-yellow-400 py-2 md:py-4 rounded-s-lg md:mb-18">
-      <nav className="flex space-x-4">
+    <div className="w-full text-black flex justify-start items-center ps-3 md:ps-5 bg-yellow-400 py-2 md:py-4 rounded-s-lg md:mb-18">
+      <nav className="flex space-x-2 md:space-x-4">
         {navLinks.map((link) => (
           <Link
             key={link.href}

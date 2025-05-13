@@ -19,7 +19,7 @@ const Header = () => {
           <Link
             key={link.href}
             href={link.href}
-            className={`relative pb-1 transition-colors duration-300
+            className={`relative pb-1 transition-colors duration-300 text-sm md:text-md
               after:content-['']
               after:absolute
               after:left-0

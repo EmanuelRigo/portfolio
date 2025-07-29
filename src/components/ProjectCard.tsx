@@ -1,37 +1,21 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
 import { useAppContext } from "@/app/context/AppContext";
+import InfoModal from "./InfoModal";
+import { Project } from "@/types/project"; // Importa la interfaz Project
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  image?: string;
-  techStack?: string[];
-  liveLink?: string;
-  repoLink?: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  title,
-  description,
-  image,
-  techStack,
-  liveLink,
-  repoLink,
-}) => {
+const ProjectCard: React.FC<Project> = (project) => {
   const techStackRef = useRef<HTMLDivElement>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const { setHoveredIcons, hoveredIcons } = useAppContext();
 
   const handleMouseEnter = () => {
-    if (techStack) {
-      setHoveredIcons(techStack);
-
-      console.log("🚀 ~ handleMouseEnter ~ techStack:", techStack);
-      console.log("hovered icnos", hoveredIcons);
+    if (project.techStack) {
+      setHoveredIcons(project.techStack);
     }
 
     if (techStackRef.current) {
@@ -54,72 +38,86 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div
-      className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-48 p-2 gap-4"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {image && (
-        <div className="relative w-32 h-full md:w-48 md:h-full flex-shrink-0">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover rounded-md"
-            sizes="192px"
-          />
-        </div>
-      )}
-      <div className="pt-2 md:ps-4 md:py-1 flex flex-col flex-1 overflow-hidden">
-        <div className="flex flex-col overflow-hidden flex-1">
-          <h3 className="text-lg font-semibold mb-1 flex-shrink-0">{title}</h3>
-          <p className="text-sm text-neutral-300 mb-2 flex-shrink-0 hidden md:block">
-            {description}
-          </p>
+    <>
+      <div
+        className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-48 p-2 gap-4"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {project.image && (
+          <div className="relative w-32 h-full md:w-48 md:h-full flex-shrink-0">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover rounded-md"
+              sizes="192px"
+            />
+          </div>
+        )}
+        <div className="pt-2 md:ps-4 md:py-1 flex flex-col flex-1 overflow-hidden">
+          <div className="flex flex-col overflow-hidden flex-1">
+            <h3 className="text-lg font-semibold mb-1 flex-shrink-0">
+              {project.title}
+            </h3>
+            <p className="text-sm text-neutral-300 mb-2 flex-shrink-0 hidden md:block">
+              {project.description}
+            </p>
 
-          {techStack && (
-            <div
-              ref={techStackRef}
-              className="flex flex-wrap gap-2 overflow-y-auto max-h-[64px] pr-1  scroll-smooth scrollbar-hide"
-            >
-              {techStack.map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-neutral-700 text-xs px-2 py-1 rounded"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
+            {project.techStack && (
+              <div
+                ref={techStackRef}
+                className="flex flex-wrap gap-2 overflow-y-auto max-h-[64px] pr-1  scroll-smooth scrollbar-hide"
+              >
+                {project.techStack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-neutral-700 text-xs px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
 
-        <div className="flex items-center space-x-4 mt-2 flex-shrink-0">
-          {liveLink && (
-            <a
-              href={liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-green-400 flex items-center space-x-1"
+          <div className="flex items-center space-x-4 mt-2 flex-shrink-0">
+            {project.liveLinks && (
+              <a
+                href={project.liveLinks?.[0]?.url ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-400 flex items-center space-x-1"
+              >
+                <FaExternalLinkAlt />
+                <span className="text-sm">Live</span>
+              </a>
+            )}
+            {project.repoLink && (
+              <a
+                href={project.repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 flex items-center space-x-1"
+              >
+                <FaGithub />
+                <span className="text-sm">Code</span>
+              </a>
+            )}
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="hover:text-yellow-400 flex items-center space-x-1"
             >
-              <FaExternalLinkAlt />
-              <span className="text-sm">Live</span>
-            </a>
-          )}
-          {repoLink && (
-            <a
-              href={repoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 flex items-center space-x-1"
-            >
-              <FaGithub />
-              <span className="text-sm">Code</span>
-            </a>
-          )}
+              <FaInfoCircle />
+              <span className="text-sm">Info</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+      {isModalOpen && (
+        <InfoModal project={project} onClose={() => setIsModalOpen(false)} />
+      )}
+    </>
   );
 };
 

@@ -1,0 +1,38 @@
+{
+  "movieList": {
+    "title": "MovieList App",
+    "short": "Explorá y guardá tus películas favoritas con MovieList.",
+    "modal": "MovieList es una aplicación Full-Stack construida con el stack MERN y tecnologías como Next.js y TypeScript...",
+    "testUsers": "Ingresá con usuarios de prueba: usuario: demo@movielist.com / contraseña: Demo1234",
+    "features": [
+      "Gestión de Películas: CRUD completo para películas en la colección personal.",
+      "Catálogo Global: Explorá películas y agregalas a tu colección.",
+      "Filtros y Búsqueda: Encontrá títulos por género, año o formato.",
+      "Autenticación de Usuarios: Login/registro con Passport.js y JWT.",
+      "Frontend Moderno: UI intuitiva con Next.js y Tailwind CSS.",
+      "Backend Robusto: API RESTful con Node.js, Express y patrones como DTO/DAO."
+    ],
+    "description": "A simple weather forecast app using OpenWeather API.",
+    "image": "/images/movielist1.png",
+    "techStack": [
+      "NextJS",
+      "Tailwind",
+      "TypeScript",
+      "React",
+      "MongoDB",
+      "JavaScript",
+      "NodeJS"
+    ],
+    "liveLinks": [
+      {
+        "label": "Producción",
+        "url": "https://movie-list-jade-kappa.vercel.app/"
+      },
+      {
+        "label": "Versión demo",
+        "url": "https://demo-movie-list.vercel.app/"
+      }
+    ],
+    "repoLink": "https://github.com/EmanuelRigo/MovieList"
+  }
+}

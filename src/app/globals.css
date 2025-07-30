@@ -161,3 +161,18 @@ body {
 .animate-fade-image {
   animation: fadeImage 1s ease-in-out forwards;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(20px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 300ms ease-out forwards;
+}

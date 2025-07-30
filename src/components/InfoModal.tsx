@@ -24,7 +24,7 @@ import { Project } from "@/types/project";
 
 // Mapeo de tecnologías a íconos + color (basado en Sidebar)
 const techIcons: Record<string, React.ReactNode> = {
-  React: <FaReact className="text-cyan-400 text-3xl" />,
+  ReactJS: <FaReact className="text-cyan-400 text-3xl" />,
   HTML: <FaHtml5 className="text-orange-500 text-3xl" />,
   CSS: <FaCss3Alt className="text-blue-500 text-3xl" />,
   JavaScript: <FaJs className="text-yellow-400 text-3xl" />,
@@ -47,8 +47,9 @@ interface InfoModalProps {
 
 const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
   return (
-    <div className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center p-4">
-      <div className="bg-neutral-800 text-white rounded-lg shadow-lg p-6 lg:max-w-[1200px] w-full relative animate-fade-in lg:h-[550px] overflow-y-auto flex flex-col">
+    <div className="fixed inset-0 bg-black/40 transition-opacity duration-300 opacity-0 animate-fade-in z-50 flex justify-center items-center p-4">
+      {" "}
+      <div className="bg-neutral-800 text-white rounded-lg shadow-lg p-6 lg:max-w-[1200px] w-full relative animate-fade-in lg:h-[600px] overflow-y-auto flex flex-col">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-neutral-400 hover:text-white transition-colors"
@@ -107,6 +108,9 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                   </div>
                 )}
               </div>
+              <div className="bg-neutral-900 p-4 rounded-md text-xs mt-4">
+                {project.testUsers}
+              </div>
             </div>
 
             <div className="flex items-center space-x-4 mt-4">
@@ -139,7 +143,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
 
         {/* Tech Stack */}
         {project.techStack && project.techStack.length > 0 && (
-          <div className="w-full mt-6 flex flex-wrap gap-6 bg-neutral-900 p-3 pb-2 rounded-md">
+          <div className="w-full mt-6 flex flex-wrap gap-6 bg-neutral-900 p-4 pb-3 rounded-md">
             {project.techStack.map((tech, index) => (
               <div
                 key={index}
@@ -148,7 +152,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                 {techIcons[tech] || (
                   <div className="w-10 h-10 bg-neutral-600 rounded-full mb-1" />
                 )}
-                <span className="text-neutral-300 mt-3">{tech}</span>
+                <span className="text-neutral-300 mt-2">{tech}</span>
               </div>
             ))}
           </div>

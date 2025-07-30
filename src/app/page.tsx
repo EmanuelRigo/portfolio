@@ -15,7 +15,7 @@ const Page = () => {
 
   return (
     <div className="flex flex-col gap-4 h-full ">
-      <div className="flex justify-end px-6 z-50 absolute -bottom-3 right-0">
+      <div className="flex justify-end px-6 z-50 absolute lg:-bottom-3 lg:right-0 bottom-14 right-9">
         <button
           onClick={() => setUseOldProjects(!useOldProjects)}
           className="px-2 py-1 bg-yellow-400 text-black font-semibold rounded-md hover:bg-yellow-500 transition-all text-sm"

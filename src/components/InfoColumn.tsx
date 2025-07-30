@@ -85,7 +85,7 @@ const InfoColumn = () => {
         className="flex items-center space-x-2 hover:text-black transition-colors mb-0 md:mb-4"
       >
         <FaGithub />
-        <span>GitHub</span>
+        <span className="hidden lg:block">GitHub</span>
       </a>
     </div>
   );

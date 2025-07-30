@@ -40,18 +40,18 @@ const ProjectCard: React.FC<Project> = (project) => {
   return (
     <>
       <div
-        className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-48 p-2 gap-4"
+        className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-full p-2 gap-4"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {project.image && (
-          <div className="relative w-32 h-full md:w-48 md:h-full flex-shrink-0">
+          <div className="relative w-32  md:w-48  flex-shrink-0">
             <Image
               src={project.image}
               alt={project.title}
               fill
               className="object-cover rounded-md"
-              sizes="192px"
+              sizes="300px"
             />
           </div>
         )}

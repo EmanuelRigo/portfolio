@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 import { FiMail } from "react-icons/fi";
-import { FaMapMarkerAlt, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaFileAlt,
+  FaGithub,
+} from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 
 const InfoColumn = () => {
@@ -51,7 +56,7 @@ const InfoColumn = () => {
       </a>
 
       {/* Email */}
-      <div className="md:flex flex-col space-y-1 mb-0 hidden ">
+      <div className="md:flex flex-col space-y-1 mb-0 md:mb-4 hidden ">
         <button
           onClick={() => setShowEmail(!showEmail)}
           className="flex items-center space-x-2 hover:text-cyan-400 transition-colors"
@@ -73,6 +78,15 @@ const InfoColumn = () => {
           </div>
         )}
       </div>
+      <a
+        href="https://github.com/EmanuelRigo"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center space-x-2 hover:text-black transition-colors mb-0 md:mb-4"
+      >
+        <FaGithub />
+        <span>GitHub</span>
+      </a>
     </div>
   );
 };

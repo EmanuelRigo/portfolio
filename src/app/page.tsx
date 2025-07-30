@@ -39,7 +39,7 @@ const Page = () => {
   const projects: Project[] = Object.values(projectData);
 
   return (
-    <div className="grid md:grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-6 justify-items-stretch md:px-6 text-black animate-fadeIn">
+    <div className="grid md:grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,214px)]  gap-6 justify-items-stretch md:px-6 text-black animate-fadeIn">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

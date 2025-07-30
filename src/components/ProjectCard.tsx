@@ -11,7 +11,7 @@ const ProjectCard: React.FC<Project> = (project) => {
   const techStackRef = useRef<HTMLDivElement>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const { setHoveredIcons, hoveredIcons } = useAppContext();
+  const { setHoveredIcons } = useAppContext();
 
   const handleMouseEnter = () => {
     if (project.techStack) {

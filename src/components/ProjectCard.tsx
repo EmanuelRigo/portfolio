@@ -90,7 +90,7 @@ const ProjectCard: React.FC<Project> = (project) => {
                 className="hover:text-green-400 flex items-center space-x-1"
               >
                 <FaExternalLinkAlt />
-                <span className="text-sm">Live</span>
+                <span className="text-sm hidden lg:block ">Live</span>
               </a>
             )}
             {project.repoLink && (
@@ -101,7 +101,7 @@ const ProjectCard: React.FC<Project> = (project) => {
                 className="hover:text-blue-400 flex items-center space-x-1"
               >
                 <FaGithub />
-                <span className="text-sm">Code</span>
+                <span className="text-sm hidden md:block">Code</span>
               </a>
             )}
             <button
@@ -109,7 +109,7 @@ const ProjectCard: React.FC<Project> = (project) => {
               className="hover:text-yellow-400 flex items-center space-x-1"
             >
               <FaInfoCircle />
-              <span className="text-sm">Info</span>
+              <span className="text-sm hidden md:block">Info</span>
             </button>
           </div>
         </div>

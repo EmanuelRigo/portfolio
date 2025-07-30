@@ -71,7 +71,7 @@ const ResumePage = () => {
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
-            className="bg-neutral-800 rounded-xl p-6 h-full w-full"
+            className="bg-neutral-800 rounded-md p-5 h-full w-full"
           >
             <h2 className="text-xl font-semibold mb-4 capitalize border-b border-neutral-600 pb-2">
               {category}

@@ -1,38 +1,129 @@
 {
-  "movieList": {
-    "title": "MovieList App",
-    "short": "Explorá y guardá tus películas favoritas con MovieList.",
-    "modal": "MovieList es una aplicación Full-Stack construida con el stack MERN y tecnologías como Next.js y TypeScript...",
-    "testUsers": "Ingresá con usuarios de prueba: usuario: demo@movielist.com / contraseña: Demo1234",
+  "masterQuiz": {
+    "title": "MasterQuiz",
+    "short": "Poné a prueba tus conocimientos con MasterQuiz.",
+    "modal": "MasterQuiz es una aplicación SPA desarrollada con React y Vite. Utiliza React Router para navegación, Bootstrap para estilos y está pensada para ofrecer una experiencia de trivia interactiva y educativa.",
+    "testUsers": "Ingresá directamente y comenzá a jugar sin necesidad de registrarte.",
     "features": [
-      "Gestión de Películas: CRUD completo para películas en la colección personal.",
-      "Catálogo Global: Explorá películas y agregalas a tu colección.",
-      "Filtros y Búsqueda: Encontrá títulos por género, año o formato.",
-      "Autenticación de Usuarios: Login/registro con Passport.js y JWT.",
-      "Frontend Moderno: UI intuitiva con Next.js y Tailwind CSS.",
-      "Backend Robusto: API RESTful con Node.js, Express y patrones como DTO/DAO."
+      "Variedad de Preguntas: Amplia selección de categorías y niveles.",
+      "Sistema de Puntaje: Seguimiento en tiempo real del rendimiento.",
+      "Navegación Rápida: Uso de React Router para una experiencia fluida.",
+      "Diseño Responsivo: Interfaz adaptable con Bootstrap y React-Bootstrap.",
+      "Componentes Reutilizables: Desarrollo organizado y escalable.",
+      "Configuración Moderna: Vite para un entorno de desarrollo ágil."
     ],
-    "description": "A simple weather forecast app using OpenWeather API.",
-    "image": "/images/movielist1.png",
+    "description": "Aplicación de preguntas y respuestas para desafiar tus conocimientos.",
+    "image": "/images/projects/masterquiz_01.png",
     "techStack": [
-      "NextJS",
-      "Tailwind",
-      "TypeScript",
       "ReactJS",
-      "MongoDB",
-      "JavaScript",
-      "NodeJS"
+      "Vite",
+      "Bootstrap",
+      "React-Bootstrap",
+      "React Router",
+      "JavaScript"
     ],
     "liveLinks": [
       {
         "label": "Producción",
-        "url": "https://movie-list-jade-kappa.vercel.app/"
-      },
-      {
-        "label": "Versión demo",
-        "url": "https://demo-movie-list.vercel.app/"
+        "url": "https://masterquiz.vercel.app/"
       }
     ],
-    "repoLink": "https://github.com/EmanuelRigo/MovieList"
+    "repoLink": "https://github.com/EmanuelRigo/MasterQuiz"
+  },
+  "etechStore": {
+    "title": "E-TechStore",
+    "short": "Explorá y comprá productos tecnológicos en E-TechStore.",
+    "modal": "E-TechStore es una aplicación de e-commerce Full-Stack desarrollada con React y Firebase. Permite a los usuarios explorar un catálogo de productos, gestionar un carrito y simular una compra. Está diseñada con una arquitectura moderna, utilizando Firestore como base de datos en la nube.",
+    "testUsers": "Podés ingresar sin necesidad de crear una cuenta. El checkout es simulado.",
+    "features": [
+      "Catálogo de Productos: Lista con imágenes, precios y descripciones.",
+      "Detalle de Producto: Información individual de cada ítem.",
+      "Carrito de Compras: Añadí, eliminá y modificá productos fácilmente.",
+      "Navegación por Categorías: Exploración rápida por tipo de producto.",
+      "Checkout Simulado: Proceso de compra con formulario de cliente.",
+      "Firebase Firestore: Backend en tiempo real para productos y órdenes."
+    ],
+    "description": "Tienda online de tecnología con React y Firebase como backend.",
+    "image": "/images/projects/e-techstore_03.png",
+    "techStack": [
+      "ReactJS",
+      "Firebase",
+      "Firestore",
+      "Bootstrap",
+      "React-Bootstrap",
+      "React Router",
+      "CSS",
+      "Notiflix"
+    ],
+    "liveLinks": [
+      {
+        "label": "Producción",
+        "url": "https://e-techstore.vercel.app/"
+      }
+    ],
+    "repoLink": "https://github.com/EmanuelRigo/E-TechStore"
+  },
+  "labCoderhouse": {
+    "title": "Projecto SQL laboratorio coderhouse",
+    "short": "Sistema integral de gestión de laboratorios clínicos.",
+    "modal": "Laboratorio Coderhouse es un sistema de base de datos completo que gestiona turnos, pacientes, resultados, pagos y personal médico. Implementado en MySQL, cuenta con procedimientos almacenados, funciones, triggers y vistas para optimizar la operación de un laboratorio clínico, con control de acceso por roles y respaldado por scripts y contenedores Docker.",
+    "testUsers": "Usuarios: juan_duenio@localhost / rec1 / tec1 / bioquimico1 (ver roles y contraseñas en el README)",
+    "features": [
+      "Gestión de Turnos: Automatiza la reserva, asignación y seguimiento.",
+      "Control de Resultados: Inserción y actualización de resultados con control de acceso.",
+      "Gestión de Usuarios y Roles: Accesos diferenciados según el perfil del usuario.",
+      "Pagos y Facturación: Registro y reporte de operaciones por tipo de pago y fecha.",
+      "Scripts SQL: Estructura modular con triggers, procedures y funciones.",
+      "Integración Docker: Fácil despliegue y testing con contenedores.",
+      "Reportes y Vistas: Visualización clara del estado de los estudios y pagos."
+    ],
+    "description": "Sistema de gestión de laboratorios desarrollado como entrega final para el curso de SQL en Coderhouse.",
+    "image": "/images/projects/SQL coder.png",
+    "techStack": [
+      "MySQL",
+      "Docker",
+      "Makefile",
+      "DBeaver",
+      "GitHub",
+      "Draw.io"
+    ],
+    "liveLinks": [
+      {
+        "label": "Repositorio",
+        "url": "https://github.com/EmanuelRigo/entrega-final-sql-coderhouse"
+      }
+    ],
+    "repoLink": "https://github.com/EmanuelRigo/entrega-final-sql-coderhouse"
+  },
+  "labFrontend": {
+    "title": "Laboratorio Clínico",
+    "short": "Consultá análisis y datos personales desde el navegador.",
+    "modal": "Laboratorio Clínico es una aplicación desarrollada con HTML, CSS y JavaScript que permite la gestión de pacientes y la consulta de resultados clínicos. Utiliza Firebase como backend para autenticación y almacenamiento de datos en tiempo real. Es un proyecto orientado a brindar una solución simple, funcional y accesible desde el navegador.",
+    "testUsers": "Usuario de prueba: maira.lab / Contraseña: 8787",
+    "features": [
+      "Gestión de Pacientes: Alta, consulta y visualización de información.",
+      "Consulta de Resultados: Visualización segura de análisis clínicos.",
+      "Autenticación Firebase: Registro e inicio de sesión de pacientes.",
+      "UI Intuitiva: Interfaz construida con HTML, CSS y JavaScript puro.",
+      "Accesibilidad: Sin necesidad de instalación ni frameworks externos.",
+      "Estructura Clara: Separación de lógica, estilos y vistas en carpetas dedicadas."
+    ],
+    "description": "Proyecto frontend con Firebase para gestión de pacientes y análisis clínicos.",
+    "image": "/images/projects/lab 04.png",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase",
+      "Firestore",
+      "Firebase Auth"
+    ],
+    "liveLinks": [
+      {
+        "label": "Repositorio",
+        "url": "https://github.com/EmanuelRigo/lab"
+      }
+    ],
+    "repoLink": "https://github.com/EmanuelRigo/lab"
   }
 }

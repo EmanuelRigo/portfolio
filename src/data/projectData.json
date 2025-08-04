@@ -46,7 +46,8 @@
       "Carga de Resultados: Resultados de análisis asociados a cada paciente.",
       "Autenticación: Login con JWT y roles de usuario.",
       "UI Moderna: Interfaz responsive con Tailwind CSS.",
-      "Backend con control de acceso y persistencia en MongoDB."
+      "Landing Page: Página de inicio informativa desarrollada con React y Tailwind CSS.",
+      "Backend: Control de acceso y persistencia en MongoDB."
     ],
     "description": "Aplicación clínica para turnos y resultados de laboratorio.",
     "image": "/images/projects/lab1.png",

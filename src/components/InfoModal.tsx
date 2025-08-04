@@ -48,7 +48,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/40 z-50 flex justify-center items-center p-2 sm:p-4">
       <div
-        className="bg-neutral-800 text-white rounded-lg shadow-lg w-full max-w-5xl relative animate-fade-in flex flex-col
+        className="bg-neutral-800 text-white rounded-lg shadow-lg w-7xl  relative animate-fade-in flex flex-col
         max-h-[90vh] overflow-y-auto"
       >
         <button
@@ -79,7 +79,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                   <h3 className="text-xl sm:text-2xl font-bold mb-1 text-yellow-400">
                     {project.title}
                   </h3>
-                  <p className="text-neutral-300 whitespace-pre-wrap text-sm sm:text-base">
+                  <p className="text-neutral-300 whitespace-pre-wrap text">
                     {project.modal}
                   </p>
                 </div>

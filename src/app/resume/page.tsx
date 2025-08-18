@@ -46,12 +46,11 @@ const skills = {
     { name: "Express", icon: <SiExpress className="text-white" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
     { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
-    { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
   ],
-  others: [
+  tools: [
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
     { name: "GitHub", icon: <FaGithub className="text-white" /> },
-    { name: "Database", icon: <FaDatabase className="text-amber-400" /> },
+
     {
       name: "Responsive Design",
       icon: <TbWorldWww className="text-blue-300" />,
@@ -60,7 +59,10 @@ const skills = {
     { name: "DBeaver", icon: <SiDbeaver className="text-orange-900" /> },
     { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
     { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
-    { name: "Inglés B1", icon: <FaLanguage className="text-green-400" /> },
+    {
+      name: "English B1 (Intermediate)",
+      icon: <FaLanguage className="text-green-400" />,
+    },
   ],
 };
 

@@ -18,7 +18,7 @@ export default function RootLayout({
         <body className="">
           {/* Sidebar */}
           <div className="w-full h-svh bg-black  flex justify-center items-center">
-            <div className="container bg-neutral-900 rounded-lg h-full md:h-[700px] flex p-6 flex-col lg:relative">
+            <div className="container bg-neutral-900 rounded-lg h-full md:h-[700px] flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
               {/* Header */}
               <div className="w-full flex justify-center items-center">
                 {/* <Header /> */}

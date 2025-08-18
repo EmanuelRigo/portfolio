@@ -112,7 +112,7 @@ const Contact = () => {
           <span>Send Message</span>
         </button>
       </form>
-      <div className="flex p-2 gap-4 mb-8 lg:absolute right-4 -bottom-6 mt-10 lg:flex-row-reverse">
+      <div className="flex p-2 gap-4 mb-8 lg:absolute right-4 -bottom-8 mt-8 lg:flex-row-reverse">
         <button
           onClick={() => setShowPhone(!showPhone)}
           className="flex items-center gap-2 cursor-pointer text-yellow-400 font-semibold rounded transition-colors hover:text-yellow-500"

@@ -40,7 +40,7 @@ const ProjectCard: React.FC<Project> = (project) => {
   return (
     <>
       <div
-        className="bg-neutral-800 text-white rounded-lg overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-full  p-2 gap-4"
+        className="bg-neutral-800 text-white rounded-md overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-full  p-2 gap-4"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

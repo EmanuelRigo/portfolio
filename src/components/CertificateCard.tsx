@@ -18,7 +18,7 @@ const CertificateCard = ({ title, url, image, topTen = false }: Props) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-neutral-950  text-white p-3 rounded-lg transition-[height] duration-700 group relative h-12 hover:h-64"
+      className="bg-neutral-950  text-white p-3 rounded-md transition-[height] duration-700 group relative h-12 hover:h-64"
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">

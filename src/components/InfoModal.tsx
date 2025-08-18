@@ -62,7 +62,7 @@ interface InfoModalProps {
 const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/40 z-50 flex justify-center items-center p-2 sm:p-4">
-      <div className="bg-neutral-800 text-white rounded-lg shadow-lg w-7xl relative animate-fade-in flex flex-col max-h-[90vh] overflow-y-auto">
+      <div className="bg-neutral-800 text-white rounded-md shadow-lg w-7xl relative animate-fade-in flex flex-col max-h-[90vh] overflow-y-auto">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-neutral-400 hover:text-white transition-colors z-10"
@@ -161,7 +161,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                   className="flex flex-col items-center text-center text-xs sm:text-sm"
                 >
                   {techIcons[tech] || (
-                    <div className="w-10 h-10 bg-neutral-600 rounded-full mb-1" />
+                    <div className="w-10 h-10 bg-neutral-600 rounded-md mb-1" />
                   )}
                   <span className="text-neutral-300 mt-2">{tech}</span>
                 </div>

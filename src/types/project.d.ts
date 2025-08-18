@@ -7,7 +7,7 @@ export interface Project {
   features?: string[];
   image: string;
   techStack: string[];
-  liveLinks: {
+  liveLinks?: {
     label: string;
     url: string;
   }[];

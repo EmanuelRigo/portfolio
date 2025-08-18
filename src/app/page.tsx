@@ -1,33 +1,38 @@
 "use client";
 
-import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import projectData from "@/data/projectData.json";
 import oldProjectData from "@/data/oldProjectData.json";
 import { Project } from "@/types/project";
 
 const Page = () => {
-  const [useOldProjects, setUseOldProjects] = useState(false);
-
-  const projects: Project[] = Object.values(
-    useOldProjects ? oldProjectData : projectData
-  );
+  const projects: Project[] = Object.values(projectData);
+  const oldProjects: Project[] = Object.values(oldProjectData);
 
   return (
-    <div className="flex flex-col gap-4 h-full ">
-      <div className="flex justify-end px-6 z-50 absolute lg:-bottom-3 lg:right-0 bottom-14 right-9">
-        <button
-          onClick={() => setUseOldProjects(!useOldProjects)}
-          className="px-2 py-1 bg-yellow-400 text-black font-semibold rounded-md hover:bg-yellow-500 transition-all text-sm"
-        >
-          {useOldProjects ? "Proyectos nuevos" : "Proyectos antiguos"}
-        </button>
+    <div className="flex flex-col gap-8 h-full lg:px-6">
+      <div>
+        <h2 className="text-2xl font-bold mb-4 text-white">
+          Proyectos Recientes
+        </h2>
+        <div className="grid md:grid-cols-[repeat(2,1fr)] auto-rows-[214px] gap-6 justify-items-stretch text-black animate-fadeIn">
+          {projects.map((project, index) => (
+            <ProjectCard key={`new-${index}`} {...project} />
+          ))}
+        </div>
       </div>
 
-      <div className="grid md:grid-cols-[repeat(2,1fr)] auto-rows-[214px] gap-6 justify-items-stretch md:px-6 text-black animate-fadeIn flex-grow">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+      <hr className="border-gray-600" />
+
+      <div>
+        <h2 className="text-2xl font-bold mb-4 text-white">
+          Proyectos Antiguos
+        </h2>
+        <div className="grid md:grid-cols-[repeat(2,1fr)] auto-rows-[214px] gap-6 justify-items-stretch text-black animate-fadeIn">
+          {oldProjects.map((project, index) => (
+            <ProjectCard key={`old-${index}`} {...project} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,6 @@ import {
   FaGitAlt,
   FaGithub,
   FaBootstrap,
-  FaDatabase,
   FaJs,
   FaLinux,
   FaLanguage,
@@ -19,7 +18,6 @@ import {
   SiExpress,
   SiTypescript,
   SiDbeaver,
-  SiPostgresql,
   SiPostman,
   SiDocker,
 } from "react-icons/si";

@@ -18,7 +18,7 @@
       "ReactJS",
       "Vite",
       "Bootstrap",
-      "React-Bootstrap",
+      "React Bootstrap",
       "React Router",
       "JavaScript"
     ],
@@ -45,15 +45,7 @@
     ],
     "description": "App Full-Stack con Next.js y Prisma para gestión de tareas.",
     "image": "/images/projects/NextCRUD.png",
-    "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-      "Prisma",
-      "SQLite",
-      "React Context"
-    ],
+    "techStack": ["NextJS", "TypeScript", "Tailwind", "NodeJS", "SQL"],
     "liveLinks": [
       {
         "label": "Repositorio",
@@ -80,12 +72,9 @@
     "techStack": [
       "ReactJS",
       "Firebase",
-      "Firestore",
       "Bootstrap",
-      "React-Bootstrap",
-      "React Router",
-      "CSS",
-      "Notiflix"
+      "React Bootstrap",
+      "React Router"
     ],
     "liveLinks": [
       {
@@ -111,14 +100,7 @@
     ],
     "description": "Sistema de gestión de laboratorios desarrollado como entrega final para el curso de SQL en Coderhouse.",
     "image": "/images/projects/SQL coder.png",
-    "techStack": [
-      "MySQL",
-      "Docker",
-      "Makefile",
-      "DBeaver",
-      "GitHub",
-      "Draw.io"
-    ],
+    "techStack": ["MySQL", "Docker", "DBeaver", "GitHub", "Drawio"],
     "repoLink": "https://github.com/EmanuelRigo/entrega-final-sql-coderhouse"
   },
   "labFrontend": {
@@ -136,14 +118,7 @@
     ],
     "description": "Proyecto frontend con Firebase para gestión de pacientes y análisis clínicos.",
     "image": "/images/projects/lab 04.png",
-    "techStack": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Firebase",
-      "Firestore",
-      "Firebase Auth"
-    ],
+    "techStack": ["HTML", "CSS", "JavaScript", "Firebase"],
     "liveLinks": [
       {
         "label": "Repositorio",
@@ -167,14 +142,7 @@
     ],
     "description": "Proyecto e-commerce con Next.js y Zustand para la gestión del carrito.",
     "image": "/images/projects/teslo-shop 00.png",
-    "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Zustand",
-      "React Icons",
-      "Swiper"
-    ],
+    "techStack": ["NextJS", "TypeScript", "Tailwind", "Zustand"],
     "liveLinks": [
       {
         "label": "Repositorio",
@@ -198,7 +166,7 @@
     ],
     "description": "Landing page para cafetería ficticia desarrollada con HTML5 y CSS3.",
     "image": "/images/projects/cafe 00.png",
-    "techStack": ["HTML", "CSS", "Google Fonts", "Material Symbols"],
+    "techStack": ["HTML", "CSS"],
     "liveLinks": [
       {
         "label": "Repositorio",
@@ -222,17 +190,7 @@
     ],
     "description": "App interactiva para simular viajes con datos reales y persistencia en el navegador.",
     "image": "/images/projects/travel_simulator.png",
-    "techStack": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "Toastify-js",
-      "Moment.js",
-      "OpenWeatherMap",
-      "Font Awesome",
-      "localStorage"
-    ],
+    "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "liveLinks": [
       {
         "label": "Repositorio",

@@ -11,6 +11,7 @@ import {
   FaJs,
   FaNodeJs,
   FaBootstrap,
+  FaProjectDiagram,
 } from "react-icons/fa";
 import { DiGit, DiMysql, DiPostgresql } from "react-icons/di";
 import {
@@ -18,6 +19,11 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiMongodb,
+  SiVite,
+  SiReactrouter,
+  SiFirebase,
+  SiDocker,
+  SiDbeaver,
 } from "react-icons/si";
 import Image from "next/image";
 import { Project } from "@/types/project";
@@ -37,6 +43,15 @@ const techIcons: Record<string, React.ReactNode> = {
   Bootstrap: <FaBootstrap className="text-purple-500 text-3xl" />,
   NextJS: <SiNextdotjs className="text-white text-3xl" />,
   MongoDB: <SiMongodb className="text-green-400 text-3xl" />,
+  Vite: <SiVite className="text-purple-400 text-3xl" />,
+  "React Router": <SiReactrouter className="text-pink-400 text-3xl" />,
+  "React Bootstrap": <FaBootstrap className="text-indigo-400 text-3xl" />,
+  SQL: <DiMysql className="text-teal-300 text-3xl" />,
+  Firebase: <SiFirebase className="text-yellow-500 text-3xl" />,
+  Docker: <SiDocker className="text-blue-400 text-3xl" />,
+  DBeaver: <SiDbeaver className="text-amber-900 text-3xl" />,
+  Drawio: <FaProjectDiagram className="text-orange-300 text-3xl" />,
+  Zustand: <FaProjectDiagram className="text-orange-400 text-3xl" />,
 };
 
 interface InfoModalProps {
@@ -47,10 +62,7 @@ interface InfoModalProps {
 const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/40 z-50 flex justify-center items-center p-2 sm:p-4">
-      <div
-        className="bg-neutral-800 text-white rounded-lg shadow-lg w-7xl  relative animate-fade-in flex flex-col
-        max-h-[90vh] overflow-y-auto"
-      >
+      <div className="bg-neutral-800 text-white rounded-lg shadow-lg w-7xl relative animate-fade-in flex flex-col max-h-[90vh] overflow-y-auto">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-neutral-400 hover:text-white transition-colors z-10"

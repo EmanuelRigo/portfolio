@@ -65,16 +65,18 @@ const InfoColumn = () => {
           <span>Email</span>
         </button>
         {showEmail && (
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 justify-center">
             <p className="text-neutral-300 text-xs">{email}</p>
             <button
               onClick={handleCopy}
-              className="hover:text-lime-400 transition-colors md:mb-4"
+              className="hover:text-lime-400 transition-colors "
               title="Copiar al portapapeles"
             >
               <IoCopyOutline />
             </button>
-            {copied && <span className="text-green-400 text-xs">Copiado</span>}
+            {copied && (
+              <span className="text-green-400 text-xs z-20">Copied</span>
+            )}
           </div>
         )}
       </div>

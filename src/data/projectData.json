@@ -3,7 +3,10 @@
     "title": "MovieList App",
     "short": "Explorá y guardá tus películas favoritas con MovieList.",
     "modal": "MovieList es una aplicación Full-Stack construida con el stack MERN y tecnologías como Next.js y TypeScript...",
-    "testUsers": "Ingresá con usuarios de prueba: usuario: demo@movielist.com / contraseña: Demo1234",
+    "testUsers": {
+      "user": "demo@movielist.com",
+      "password": "Demo1234"
+    },
     "features": [
       "Gestión de Películas: CRUD completo para películas en la colección personal.",
       "Catálogo Global: Explorá películas y agregalas a tu colección.",
@@ -39,7 +42,10 @@
     "title": "Clinic Lab",
     "short": "Gestión de pacientes, turnos y resultados en laboratorios clínicos.",
     "modal": "Clinic Lab es una aplicación Full-Stack desarrollada con Next.js, TypeScript, MongoDB y otras tecnologías modernas. Permite gestionar pacientes, asignar turnos y registrar resultados de laboratorio de manera intuitiva.",
-    "testUsers": "Ingresá con usuarios de prueba: usuario: demo@lab.com / contraseña: Demo1234",
+    "testUsers": {
+      "user": "demo@lab.com",
+      "password": "Demo1234"
+    },
     "features": [
       "Gestión de Pacientes: Alta, edición y eliminación de pacientes.",
       "Asignación de Turnos: Calendario con fechas disponibles.",

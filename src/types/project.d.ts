@@ -3,7 +3,10 @@ export interface Project {
   description: string;
   short: string;
   modal: string;
-  testUsers?: string;
+  testUsers?: {
+    user?: string;
+    password?: string;
+  };
   features?: string[];
   image: string;
   techStack: string[];

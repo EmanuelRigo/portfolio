@@ -1,8 +1,8 @@
 "use client";
 
 import ProjectCard from "@/components/ProjectCard";
-import projectData from "@/data/projectData.json";
-import oldProjectData from "@/data/oldProjectData.json";
+import projectData from "@/data/projectData_en.json";
+import oldProjectData from "@/data/oldProjectData_en.json";
 import { Project } from "@/types/project";
 
 const Page = () => {

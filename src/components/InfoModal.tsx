@@ -118,9 +118,10 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                     </div>
                   )}
 
-                {project.testUsers && (
+                {project.testUsers?.user && project.testUsers?.password && (
                   <div className="bg-neutral-900 p-4 rounded-md text-xs sm:text-sm">
-                    {project.testUsers}
+                    User: {project.testUsers.user} Password:{" "}
+                    {project.testUsers.password}
                   </div>
                 )}
               </div>

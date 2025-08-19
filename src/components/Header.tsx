@@ -1,19 +1,22 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   const navLinks = [
-    { href: "/", label: "Projects" },
-    { href: "/certificates", label: "Certificates" },
-    { href: "/contact-me", label: "ContactMe" },
-    { href: "/resume", label: "Resume" },
+    { href: "/", label: t("nav.projects") },
+    { href: "/certificates", label: t("nav.certificates") },
+    { href: "/contact-me", label: t("nav.contactMe") },
+    { href: "/resume", label: t("nav.resume") },
   ];
 
   return (
-    <div className="w-full text-black flex justify-start items-center ps-3 md:ps-5 bg-yellow-400 py-2 md:py-4 rounded-s-md md:mb-18">
+    <div className="w-full text-black flex justify-between items-center ps-3 md:ps-5 bg-yellow-400 py-2 md:py-4 rounded-s-md md:mb-18">
       <nav className="flex space-x-2 md:space-x-4">
         {navLinks.map((link) => (
           <Link
@@ -27,7 +30,7 @@ const Header = () => {
               after:h-[2px]
               after:bg-black
               after:transition-transform
-              after:duration-300
+              after:duration-200
               after:w-full
               ${
                 pathname === link.href

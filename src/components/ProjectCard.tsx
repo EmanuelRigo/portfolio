@@ -50,7 +50,7 @@ const ProjectCard: React.FC<Project> = (project) => {
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover rounded-md"
+              className="object-cover rounded-xs"
               sizes="300px"
             />
           </div>

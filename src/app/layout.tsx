@@ -1,11 +1,12 @@
 // app/layout.tsx
-import Sidebar from "@/components/Sidebar"; // Importa el Sidebar
+import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
-import "./globals.css"; // Importa los estilos globales
+import "./globals.css";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import InfoColumn from "@/components/InfoColumn";
 import ContextProvider from "./context/contextProvider";
+import I18nInitializer from "@/components/I18nInitializer";
 
 export default function RootLayout({
   children,
@@ -16,9 +17,10 @@ export default function RootLayout({
     <ContextProvider>
       <html lang="en">
         <body className="">
+          <I18nInitializer />
           {/* Sidebar */}
           <div className="w-full h-svh bg-black  flex justify-center items-center">
-            <div className="container bg-neutral-900 rounded-md h-full md:h-[700px] flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
+            <div className="container bg-neutral-900 rounded-xl h-full md:h-[700px] flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
               {/* Header */}
               <div className="w-full flex justify-center items-center">
                 {/* <Header /> */}

@@ -1,0 +1,12 @@
+{
+  "recentProjects": "Proyectos Recientes",
+  "oldProjects": "Proyectos Antiguos",
+  "heroSubtitle": "Desarrollador Fullstack",
+  "heroDescription": "Transformando ideas en experiencias web fluidas",
+  "nav": {
+    "projects": "Proyectos",
+    "certificates": "Certificados",
+    "contactMe": "Contáctame",
+    "resume": "Currículum"
+  }
+}

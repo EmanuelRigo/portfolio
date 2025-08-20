@@ -5,7 +5,11 @@ import projectData from "@/data/projectData_en.json";
 import oldProjectData from "@/data/oldProjectData_en.json";
 import { Project } from "@/types/project";
 
+import { useTranslations } from "next-intl";
+
 const Page = () => {
+  const t = useTranslations("Projects");
+
   const projects: Project[] = Object.values(projectData);
   const oldProjects: Project[] = Object.values(oldProjectData);
 
@@ -13,7 +17,7 @@ const Page = () => {
     <div className="flex flex-col gap-8 h-full lg:px-6">
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">
-          Proyectos Recientes
+          {t("Recent Projects")}
         </h2>
         <div className="grid md:grid-cols-[repeat(2,1fr)] auto-rows-[214px] gap-6 justify-items-stretch text-black animate-fadeIn">
           {projects.map((project, index) => (
@@ -26,7 +30,7 @@ const Page = () => {
 
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">
-          Proyectos Antiguos
+          {t("Old Projects")}
         </h2>
         <div className="grid md:grid-cols-[repeat(2,1fr)] auto-rows-[214px] gap-6 justify-items-stretch text-black animate-fadeIn">
           {oldProjects.map((project, index) => (

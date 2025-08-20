@@ -1,0 +1,31 @@
+{
+  "Projects": {
+    "Recent Projects": "Recent Projects",
+    "Old Projects": "Old Projects"
+  },
+  "Certificates": {
+    "title": "Certificates",
+    "description": "Here are some of my certificates",
+    "Backend Programming": "Backend Programming"
+  },
+  "Contact": {
+    "nameLabel": "Name and surname",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Your email address",
+    "emailPlaceholder": "name@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
+    "sendButton": "Send Message"
+  },
+  "Header": {
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "contactMe": "Contact Me",
+    "resume": "Resume"
+  },
+  "hero": {
+    "heroSubtitle": "Fullstack Developer",
+    "heroDescription": "Transforming ideas into seamless web experiences",
+    "with": "with"
+  }
+}

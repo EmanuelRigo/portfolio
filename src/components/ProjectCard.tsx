@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
-import { useAppContext } from "@/app/context/AppContext";
+import { useAppContext } from "@/app/[locale]/context/AppContext";
 import InfoModal from "./InfoModal";
 import { Project } from "@/types/project"; // Importa la interfaz Project
 

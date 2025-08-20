@@ -1,0 +1,31 @@
+{
+  "Projects": {
+    "Recent Projects": "Proyectos Recientes",
+    "Old Projects": "Proyectos Antiguos"
+  },
+  "Certificates": {
+    "title": "Certificados",
+    "description": "Aquí están algunos de mis certificados",
+    "Backend Programming": "Programación Backend"
+  },
+  "Contact": {
+    "nameLabel": "Nombre y apellido",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Tu dirección de correo",
+    "emailPlaceholder": "nombre@ejemplo.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribí tu mensaje...",
+    "sendButton": "Enviar mensaje"
+  },
+  "Header": {
+    "projects": "Proyectos",
+    "certificates": "Certificados",
+    "contactMe": "Contáctame",
+    "resume": "Currículum"
+  },
+  "hero": {
+    "heroSubtitle": "Desarrollador Fullstack",
+    "heroDescription": "Transformando ideas en experiencias web fluidas",
+    "with": "con"
+  }
+}

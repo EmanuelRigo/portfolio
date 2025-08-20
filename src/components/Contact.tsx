@@ -3,6 +3,8 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { FaPhone } from "react-icons/fa";
 
+import { useTranslations } from "next-intl";
+
 interface FormData {
   name: string;
   email: string;
@@ -10,6 +12,7 @@ interface FormData {
 }
 
 const Contact = () => {
+  const t = useTranslations("Contact");
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -56,13 +59,13 @@ const Contact = () => {
             htmlFor="name"
             className="block text-neutral-300 font-semibold mb-2"
           >
-            Name and surname
+            {t("nameLabel")}
           </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="John Doe"
+            placeholder={t("namePlaceholder")}
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border-2 border-neutral-700 focus:border-neutral-300 outline-none rounded-md bg-neutral-800"
@@ -74,13 +77,13 @@ const Contact = () => {
             htmlFor="email"
             className="block text-neutral-300 font-semibold mb-2"
           >
-            Your email address
+            {t("emailLabel")}
           </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="name@example.com"
+            placeholder={t("emailPlaceholder")}
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border-2 border-neutral-700 focus:border-neutral-300 outline-none rounded-md bg-neutral-800"
@@ -92,13 +95,13 @@ const Contact = () => {
             htmlFor="subject"
             className="block text-neutral-300 font-semibold mb-2"
           >
-            Message
+            {t("messageLabel")}
           </label>
           <textarea
             name="subject"
             id="subject"
             rows={4}
-            placeholder="Write your message..."
+            placeholder={t("messagePlaceholder")}
             value={formData.subject}
             onChange={handleChange}
             className="w-full px-4 py-2 border-2 border-neutral-700 focus:border-neutral-300 outline-none rounded-md resize-none bg-neutral-800"
@@ -109,7 +112,7 @@ const Contact = () => {
           type="submit"
           className="flex items-center gap-2 bg-neutral-600 cursor-pointer text-white font-semibold py-2 px-4 rounded transition-colors hover:bg-neutral-700"
         >
-          <span>Send Message</span>
+          <span>{t("sendButton")}</span>
         </button>
       </form>
       <div className="flex p-2 gap-4 mb-8 lg:absolute right-4 -bottom-8 mt-8 lg:flex-row-reverse">

@@ -1,15 +1,18 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations("Header");
+
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/", label: "Projects" },
-    { href: "/certificates", label: "Certificates" },
-    { href: "/contact-me", label: "ContactMe" },
-    { href: "/resume", label: "Resume" },
+    { href: "/", label: `${t("projects")}` },
+    { href: "/certificates", label: `${t("certificates")}` },
+    { href: "/contact-me", label: `${t("contactMe")}` },
+    { href: "/resume", label: `${t("resume")}` },
   ];
 
   return (

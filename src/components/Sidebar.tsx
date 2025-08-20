@@ -1,6 +1,6 @@
 "use client";
 
-import { useAppContext } from "@/app/context/AppContext";
+import { useAppContext } from "@/app/[locale]/context/AppContext";
 import Link from "next/link";
 import {
   FaReact,

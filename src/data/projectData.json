@@ -15,7 +15,7 @@
       "Frontend Moderno: UI intuitiva con Next.js y Tailwind CSS.",
       "Backend Robusto: API RESTful con Node.js, Express y patrones como DTO/DAO."
     ],
-    "description": "A simple weather forecast app using OpenWeather API.",
+    "description": "MovieList es una app completa para gestionar películas fácilmente.",
     "image": "/images/projects/movielist1.png",
     "techStack": [
       "NextJS",

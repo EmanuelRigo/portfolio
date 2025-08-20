@@ -3,7 +3,7 @@
     "title": "MovieList App",
     "short": "Explore and save your favorite movies with MovieList.",
     "modal": "MovieList is a Full-Stack application built with the MERN stack and technologies such as Next.js and TypeScript. It allows you to manage your personal movie collection, explore global catalogs, and filter movies by genre, year, or format. User authentication is secured with Passport.js and JWT.",
-    "description": "App to explore, save, and manage your favorite movies.",
+    "description": "MovieList is a full app to manage movies with ease.",
     "features": [
       "Movie Management: Full CRUD for movies in the personal collection.",
       "Global Catalog: Browse movies and add them to your collection.",

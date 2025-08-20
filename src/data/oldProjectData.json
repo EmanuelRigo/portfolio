@@ -3,7 +3,6 @@
     "title": "MasterQuiz",
     "short": "Poné a prueba tus conocimientos con MasterQuiz.",
     "modal": "MasterQuiz es una aplicación SPA desarrollada con React y Vite. Utiliza React Router para navegación, Bootstrap para estilos y está pensada para ofrecer una experiencia de trivia interactiva y educativa.",
-    "testUsers": "Ingresá directamente y comenzá a jugar sin necesidad de registrarte.",
     "features": [
       "Variedad de Preguntas: Amplia selección de categorías y niveles.",
       "Sistema de Puntaje: Seguimiento en tiempo real del rendimiento.",
@@ -34,7 +33,6 @@
     "title": "ToDoList",
     "short": "Organizá tus tareas con esta app Full-Stack moderna.",
     "modal": "ToDoList es una aplicación web Full-Stack desarrollada con Next.js, TypeScript, Prisma y Tailwind CSS. Permite gestionar tareas personales mediante una interfaz intuitiva y un backend robusto que utiliza API Routes y SQLite como base de datos. Practica para entender los conceptos de NextJs.",
-    "testUsers": "No requiere usuarios. Ejecutá localmente para probar el CRUD de tareas.",
     "features": [
       "CRUD de Tareas: Crear, leer, editar y eliminar tareas.",
       "Frontend con Next.js: UI reactiva, rápida y responsiva.",
@@ -58,7 +56,6 @@
     "title": "E-TechStore",
     "short": "Explorá y comprá productos tecnológicos en E-TechStore.",
     "modal": "E-TechStore es una aplicación de e-commerce Full-Stack desarrollada con React y Firebase. Permite a los usuarios explorar un catálogo de productos, gestionar un carrito y simular una compra. Está diseñada con una arquitectura moderna, utilizando Firestore como base de datos en la nube.",
-    "testUsers": "Podés ingresar sin necesidad de crear una cuenta. El checkout es simulado.",
     "features": [
       "Catálogo de Productos: Lista con imágenes, precios y descripciones.",
       "Detalle de Producto: Información individual de cada ítem.",
@@ -88,7 +85,10 @@
     "title": "Projecto SQL laboratorio coderhouse",
     "short": "Sistema integral de gestión de laboratorios clínicos.",
     "modal": "Laboratorio Coderhouse es un sistema de base de datos completo que gestiona turnos, pacientes, resultados, pagos y personal médico. Implementado en MySQL, cuenta con procedimientos almacenados, funciones, triggers y vistas para optimizar la operación de un laboratorio clínico, con control de acceso por roles y respaldado por scripts y contenedores Docker.",
-    "testUsers": "Usuarios: juan_duenio@localhost / Contraseña: labcoder",
+    "testUsers": {
+      "user": "juan_duenio@localhost",
+      "password": "labcoder"
+    },
     "features": [
       "Gestión de Turnos: Automatiza la reserva, asignación y seguimiento.",
       "Control de Resultados: Inserción y actualización de resultados con control de acceso.",
@@ -107,7 +107,10 @@
     "title": "Laboratorio Clínico",
     "short": "Consultá análisis y datos personales desde el navegador.",
     "modal": "Laboratorio Clínico es una aplicación desarrollada con HTML, CSS y JavaScript que permite la gestión de pacientes y la consulta de resultados clínicos. Utiliza Firebase como backend para autenticación y almacenamiento de datos en tiempo real. Es un proyecto orientado a brindar una solución simple, funcional y accesible desde el navegador.",
-    "testUsers": "Usuario de prueba: maira.lab / Contraseña: 8787",
+    "testUsers": {
+      "user": "maira.lab",
+      "password": "8787"
+    },
     "features": [
       "Gestión de Pacientes: Alta, consulta y visualización de información.",
       "Consulta de Resultados: Visualización segura de análisis clínicos.",
@@ -131,7 +134,6 @@
     "title": "Teslo-Shop",
     "short": "Tienda virtual moderna con carrito de compras y diseño responsivo.",
     "modal": "Teslo-Shop es una tienda online desarrollada con Next.js, TypeScript y Tailwind CSS. Permite explorar productos, ver sus detalles y agregarlos a un carrito de compras. Su estructura limpia, responsiva y modular está pensada para ser una base sólida en proyectos de e-commerce modernos. Practica para entender NextJs con TypeScript.",
-    "testUsers": "No requiere autenticación. Iniciá la app y explorá libremente.",
     "features": [
       "Catálogo de Productos: Exploración visual y descriptiva.",
       "Páginas de Detalle: Información ampliada de cada producto.",
@@ -155,7 +157,6 @@
     "title": "Café de la Geisha",
     "short": "Landing page elegante para una cafetería ficticia.",
     "modal": "Café de la Geisha es una landing page estática diseñada con HTML y CSS. Representa la identidad visual de una cafetería ficticia, presentando sus servicios, personal y datos de contacto en una única página moderna y responsiva. Ideal para desplegar como sitio de presentación comercial.",
-    "testUsers": "No se requieren credenciales.",
     "features": [
       "Diseño Moderno: Interfaz atractiva con enfoque visual.",
       "Secciones Descriptivas: Inicio, servicios, personal y contacto.",
@@ -179,7 +180,6 @@
     "title": "Simulador de Viajes",
     "short": "Simulá tus viajes, gestioná tu billetera y explorá el mundo.",
     "modal": "Simulador de Viajes es una aplicación frontend que permite a los usuarios gestionar un presupuesto virtual, comprar boletos, explorar destinos y seguir sus viajes. Está desarrollada con HTML, CSS y JavaScript puro, utilizando herramientas como Bootstrap, Toastify-js, Moment.js y OpenWeatherMap para enriquecer la experiencia del usuario.",
-    "testUsers": "No requiere credenciales.",
     "features": [
       "Billetera Virtual: Agregá y administrá tu saldo para viajar.",
       "Catálogo de Destinos: Viajá a ciudades disponibles en un archivo JSON local.",

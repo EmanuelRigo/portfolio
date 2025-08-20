@@ -1,17 +1,26 @@
 "use client";
 
 import ProjectCard from "@/components/ProjectCard";
-import projectData from "@/data/projectData_en.json";
-import oldProjectData from "@/data/oldProjectData_en.json";
+import projectDataEn from "@/data/projectData_en.json";
+import oldProjectDataEn from "@/data/oldProjectData_en.json";
+import projectDataEs from "@/data/projectData.json";
+import oldProjectDataEs from "@/data/oldProjectData.json";
 import { Project } from "@/types/project";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Page = () => {
   const t = useTranslations("Projects");
+  const locale = useLocale();
 
-  const projects: Project[] = Object.values(projectData);
-  const oldProjects: Project[] = Object.values(oldProjectData);
+  const projects: Project[] =
+    locale === "en"
+      ? Object.values(projectDataEn)
+      : Object.values(projectDataEs);
+  const oldProjects: Project[] =
+    locale === "en"
+      ? Object.values(oldProjectDataEn)
+      : Object.values(oldProjectDataEs);
 
   return (
     <div className="flex flex-col gap-8 h-full lg:px-6">

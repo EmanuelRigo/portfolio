@@ -1,18 +1,18 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Header = () => {
   const t = useTranslations("Header");
-
   const pathname = usePathname();
+  const locale = useLocale(); // idioma actual (es | en)
 
   const navLinks = [
-    { href: "/", label: `${t("projects")}` },
-    { href: "/certificates", label: `${t("certificates")}` },
-    { href: "/contact-me", label: `${t("contactMe")}` },
-    { href: "/resume", label: `${t("resume")}` },
+    { href: "/", label: t("projects") },
+    { href: "/certificates", label: t("certificates") },
+    { href: "/contact-me", label: t("contactMe") },
+    { href: "/resume", label: t("resume") },
   ];
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
         {navLinks.map((link) => (
           <Link
             key={link.href}
-            href={link.href}
+            href={`/${locale}${link.href}`} // 👈 importante: incluye locale
             className={`relative pb-1 transition-colors duration-300 text-sm md:text-md
               after:content-['']
               after:absolute

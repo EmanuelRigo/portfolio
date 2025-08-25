@@ -1,5 +1,3 @@
-"use client";
-
 import ProjectCard from "@/components/ProjectCard";
 import projectDataEn from "@/data/projectData_en.json";
 import oldProjectDataEn from "@/data/oldProjectData_en.json";
@@ -7,16 +5,22 @@ import projectDataEs from "@/data/projectData.json";
 import oldProjectDataEs from "@/data/oldProjectData.json";
 import { Project } from "@/types/project";
 
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 
-const Page = () => {
-  const t = useTranslations("Projects");
-  const locale = useLocale();
+export const metadata = {
+  title: "Emanuel R. | Proyectos",
+  description: "Página de para que puedas ver mis proyectos.",
+};
+
+const Page = async () => {
+  const locale = await getLocale();
+  const t = await getTranslations("Projects");
 
   const projects: Project[] =
     locale === "en"
       ? Object.values(projectDataEn)
       : Object.values(projectDataEs);
+
   const oldProjects: Project[] =
     locale === "en"
       ? Object.values(oldProjectDataEn)

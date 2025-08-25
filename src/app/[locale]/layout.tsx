@@ -29,8 +29,8 @@ export default async function RootLayout({
         <body className="">
           <NextIntlClientProvider>
             {/* Sidebar */}
-            <div className="w-full h-svh bg-black  flex justify-center items-center">
-              <div className="container bg-neutral-900 rounded-md h-full md:h-[700px] flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
+            <div className="w-screen h-svh bg-black  flex justify-center items-center ">
+              <div className=" bg-neutral-900 rounded-md h-full 2xl:h-[700px] 2xl:container w-full  flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
                 {/* Header */}
                 <div className="w-full flex justify-center items-center">
                   {/* <Header /> */}

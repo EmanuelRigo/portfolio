@@ -12,6 +12,7 @@ import {
   FaNodeJs,
   FaBootstrap,
   FaProjectDiagram,
+  FaServer,
 } from "react-icons/fa";
 import { DiGit, DiMysql, DiPostgresql } from "react-icons/di";
 import {
@@ -136,6 +137,17 @@ const InfoModal: React.FC<InfoModalProps> = ({ project, onClose }) => {
                   >
                     <FaExternalLinkAlt />
                     <span>Live</span>
+                  </a>
+                )}
+                {project.liveLinks?.[1]?.url && (
+                  <a
+                    href={project.liveLinks[1].url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-400 flex items-center space-x-1"
+                  >
+                    <FaServer />
+                    <span>System</span>
                   </a>
                 )}
 

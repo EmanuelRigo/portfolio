@@ -2,7 +2,12 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
+import {
+  FaExternalLinkAlt,
+  FaGithub,
+  FaInfoCircle,
+  FaServer,
+} from "react-icons/fa";
 import { useAppContext } from "@/app/[locale]/context/AppContext";
 import InfoModal from "./InfoModal";
 import { Project } from "@/types/project"; // Importa la interfaz Project
@@ -40,7 +45,7 @@ const ProjectCard: React.FC<Project> = (project) => {
   return (
     <>
       <div
-        className="bg-neutral-800 text-white rounded-md overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-full  p-2 gap-4"
+        className="bg-neutral-800 text-white rounded-md overflow-hidden shadow-md transition-all duration-30 ease-in-out border-2 border-neutral-800 hover:border-yellow-400 active:border-yellow-400 flex  max-w-xl w-full h-auto md:h-full  p-3 gap-4"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -50,12 +55,12 @@ const ProjectCard: React.FC<Project> = (project) => {
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover rounded-md"
+              className="object-cover rounded-xs"
               sizes="300px"
             />
           </div>
         )}
-        <div className="pt-2 md:ps-4 md:py-1 flex flex-col flex-1 overflow-hidden">
+        <div className="flex flex-col flex-1 overflow-hidden">
           <div className="flex flex-col overflow-hidden flex-1">
             <h3 className="text-lg font-semibold mb-1 flex-shrink-0">
               {project.title}
@@ -81,16 +86,27 @@ const ProjectCard: React.FC<Project> = (project) => {
             )}
           </div>
 
-          <div className="flex items-center space-x-4 mt-2 flex-shrink-0">
-            {project.liveLinks && (
+          <div className="flex flex-wrap items-center gap-2 mt-2 flex-shrink-0 text-sm bg-neutral-900 p-2 rounded-md">
+            {project.liveLinks?.[0]?.url && (
               <a
-                href={project.liveLinks?.[0]?.url ?? "#"}
+                href={project.liveLinks[0].url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-400 flex items-center space-x-1"
               >
                 <FaExternalLinkAlt />
-                <span className="text-sm hidden lg:block ">Live</span>
+                <span>Live</span>
+              </a>
+            )}
+            {project.liveLinks?.[1]?.url && (
+              <a
+                href={project.liveLinks[1].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-400 flex items-center space-x-1"
+              >
+                <FaServer />
+                <span className="hidden md:block">System</span>
               </a>
             )}
             {project.repoLink && (

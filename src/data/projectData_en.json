@@ -71,6 +71,10 @@
       {
         "label": "Producción",
         "url": "https://labclinico.vercel.app/"
+      },
+      {
+        "label": "Producción",
+        "url": "https://lab-patient-system.vercel.app/"
       }
     ]
   }

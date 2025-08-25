@@ -1,7 +1,6 @@
 "use client";
 
 import { useAppContext } from "@/app/[locale]/context/AppContext";
-import Link from "next/link";
 import {
   FaReact,
   FaHtml5,
@@ -114,19 +113,19 @@ const Sidebar = () => {
       <div className="relative w-full h-full overflow-hidden mask-y-from-70%">
         <div className="scrolling-icons absolute top-0 left-0 w-full flex flex-col">
           {[...iconLinks, ...iconLinks].map((item, idx) => (
-            <Link
-              href="#"
+            <button
               key={idx}
               aria-label={item.label}
               className={`${item.colorHover} ${
                 hoveredIcons.includes(item.label)
                   ? item.color
                   : "text-neutral-700"
-              } $ñ py-1 md:py-3 px-3 md:px-4 transition-colors duration-700 flex justify-center  `}
+              } py-1 md:py-3 px-3 md:px-4 transition-colors duration-700 flex justify-center`}
               onMouseEnter={() => setHoveredIcon(item.label)}
+              type="button"
             >
               {item.icon}
-            </Link>
+            </button>
           ))}
         </div>
       </div>

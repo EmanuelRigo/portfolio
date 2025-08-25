@@ -59,7 +59,7 @@ const InfoColumn = () => {
       <div className="md:flex flex-col space-y-1 mb-0 md:mb-4 hidden ">
         <button
           onClick={() => setShowEmail(!showEmail)}
-          className="flex items-center space-x-2 hover:text-cyan-400 transition-colors"
+          className="flex items-center space-x-2 hover:text-cyan-400 transition-colors cursor-pointer"
         >
           <FiMail />
           <span>Email</span>

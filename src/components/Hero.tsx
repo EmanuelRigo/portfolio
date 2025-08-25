@@ -23,7 +23,16 @@ const Hero = () => {
         <h1 className="text-2xl md:text-4xl font-bold ">Emanuel Rigo</h1>
         <button
           onClick={switchLocale}
-          className=" text-yellow-400  text-sm absolute p-4 right-0 lg:right-6 -top-4 lg:top-6 transition-colors hover:text-yellow-300"
+          className=" text-yellow-400  text-sm absolute p-4 right-0 lg:right-6 -top-4 lg:top-6 transition-colors hover:text-yellow-300 cursor-pointer         after:content-['']
+              after:absolute
+              after:left-0
+              after:bottom-0
+              after:h-[2px]
+              after:bg-yellow-400
+              after:transition-transform
+              after:duration-300
+              after:w-full
+              after:scale-x-0 hover:after:scale-x-100"
         >
           {locale === "en" ? "ESP" : "ENG"}
         </button>

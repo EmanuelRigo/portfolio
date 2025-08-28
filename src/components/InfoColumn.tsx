@@ -13,7 +13,7 @@ import { IoCopyOutline } from "react-icons/io5";
 const InfoColumn = () => {
   const [showEmail, setShowEmail] = useState(false);
   const [copied, setCopied] = useState(false);
-  const email = "emanuel.rigo@email.com";
+  const email = "emanuel.r-dev@outlook.com";
 
   const handleCopy = async () => {
     try {

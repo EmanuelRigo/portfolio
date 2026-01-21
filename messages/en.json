@@ -27,5 +27,14 @@
     "heroSubtitle": "Fullstack Developer",
     "heroDescription": "Transforming ideas into seamless web experiences",
     "with": "with"
+  },
+  
+  "Resume": {
+    "title": "Experience",
+    "jobTitle": "Frontend Developer – SwaplyAr",
+    "bullet1": "Development of modern, accessible, and scalable interfaces using React.js and TypeScript.Efficient state management with Zustand for dynamic applications.",
+    "bullet2": "Consumption and validation of REST APIs documented with Swagger.",
+    "bullet3": "Testing and validation of services using Postman. Creation of reusable components and scalable structures."
   }
 }
+

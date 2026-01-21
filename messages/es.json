@@ -21,11 +21,20 @@
     "projects": "Proyectos",
     "certificates": "Certificados",
     "contactMe": "Contáctame",
-    "resume": "Currículum"
+    "resume": "Currículum/experiencia"
   },
   "hero": {
     "heroSubtitle": "Desarrollador Fullstack",
     "heroDescription": "Transformando ideas en experiencias web fluidas",
     "with": "con"
-  }
+  },
+  "Resume": {
+    "title": "Experiencia",
+    "jobTitle": "Desarrollador Frontend – SwaplyAr",
+    "bullet1": "Desarrollo de interfaces modernas, accesibles y escalables utilizando React.js y TypeScript. Gestión de estado eficiente con Zustand para aplicaciones dinámicas.",
+    "bullet2": "Consumo y validación de APIs REST documentadas con Swagger.",
+    "bullet3": "Pruebas y validaciones de servicios mediante Postman. Creación de componentes reutilizables y estructuras escalables."
+  
+}
+  
 }

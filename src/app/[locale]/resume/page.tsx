@@ -1,27 +1,12 @@
 
 "use client";
+
+import { useTranslations } from "next-intl"; // Importamos el hook
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaBootstrap,
-  FaJs,
-  FaLinux,
-  FaLanguage,
+  FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaBootstrap, FaJs, FaLinux, FaLanguage,
 } from "react-icons/fa";
 import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiMongodb,
-  SiMysql,
-  SiExpress,
-  SiTypescript,
-  SiDbeaver,
-  SiPostman,
-  SiDocker,
+  SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql, SiExpress, SiTypescript, SiDbeaver, SiPostman, SiDocker,
 } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
@@ -54,63 +39,69 @@ const skills = {
   ],
 };
 
- const SkillColumn = ({ title, items }) => (
-   <div className="bg-neutral-800 rounded-md p-4 h-full flex flex-col ">
-     <h3 className="text-lg font-semibold mb-3 border-b border-neutral-600 pb-1">
-       {title}
-     </h3>
-     <ul className="grid gap-3 text-sm ">
-       {items.map(({ name, icon }) => (
-         <li key={name} className="flex items-center gap-3">
-           <span className="text-lg">{icon}</span>
-           {name}
-         </li>
-       ))}
-     </ul>
-   </div>
- );
-
-
+const SkillColumn = ({ title, items }) => (
+  <div className="p-4 h-full flex flex-col">
+    <h2 className="text-xl font-semibold mb-3 border-b border-neutral-600 pb-1">
+      {title}
+    </h2>
+    <ul className="grid gap-3 text-sm">
+      {items.map(({ name, icon }) => (
+        <li key={name} className="flex items-center gap-3 text-neutral-300">
+          <span className="text-lg">{icon}</span>
+          {name}
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 export default function ResumePage() {
-  return (
-    <section className=" overflow-hidden h-full bg-neutral-900 text-neutral-100">
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-4 h-full p-4">
+  // Usamos el namespace "Resume" de tus archivos JSON
+  const t = useTranslations("Resume");
 
-        {/* RESUMEN */}
-        <aside className="bg-neutral-800 rounded-md p-4 h-full border-l-4 border-yellow-400">
-          <h2 className="text-xl font-semibold mb-3 border-b border-neutral-600 pb-1">
-            Resumen
-          </h2>
-          <p className="text-sm text-neutral-400 leading-relaxed">
-            Desarrollador Frontend con experiencia en React, Next.js y TypeScript,
-            enfocado en interfaces modernas, accesibles y escalables.
-          </p>
+  return (
+    <section className="overflow-hidden h-full bg-neutral-900 text-neutral-100 p-4 font-sans">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-4 h-full">
+
+        {/* SECCIÓN EXPERIENCIA */}
+        <aside className="relative bg-neutral-800 rounded-md p-4 h-full">
+          <div className="absolute left-0 top-0 bottom-0 w-1 bg-yellow-400 rounded-l-md"></div>
+          <div className="pl-2">
+            <h2 className="text-xl font-semibold mb-3 border-b border-neutral-600 pb-1">
+              {t("title")}
+            </h2>
+            <h3 className="text-lg font-semibold mb-2 text-neutral-100">
+              {t("jobTitle")}
+            </h3>
+            <div className="text-sm text-neutral-200 leading-relaxed space-y-3">
+              <p>{t("bullet1")}</p>
+              <p>{t("bullet2")}</p>
+              <p>{t("bullet3")}</p>
+            </div>
+          </div>
         </aside>
 
-        {/* SKILLS */}
-        {/* <main className="grid grid-cols-1 md:grid-cols-3 gap-4 h-full bg-neutral-800 rounded-md  ">
-          <SkillColumn  title="Tools" items={skills.tools} />
-          <SkillColumn  title="Backend" items={skills.backend} />
-          <SkillColumn  title="Frontend" items={skills.frontend} />
-        </main> */}
-         <main className="bg-neutral-800 rounded-md p-1">
-  <div
-    className="
-      grid grid-cols-1 md:grid-cols-3
-      md:divide-x md:divide-neutral-700
-      bg-neutral-800
-       h-full
-    "
-  >
-    <SkillColumn title="Tools" items={skills.tools} />
-    <SkillColumn title="Backend" items={skills.backend} />
-    <SkillColumn title="Frontend" items={skills.frontend} />
-  </div>
-</main>
-        {/* SKILLS */}
+        {/* CONTENEDOR DE SKILLS */}
+        <main className="bg-neutral-800 rounded-md overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 h-full">
+            {/* Columna Tools */}
+            <div className="relative">
+              <SkillColumn title="Tools" items={skills.tools} />
+              <div className="hidden md:block absolute right-0 top-1/8 bottom-1/8 w-[1px] bg-neutral-600"></div>
+            </div>
 
+            {/* Columna Backend */}
+            <div className="relative">
+              <SkillColumn title="Backend" items={skills.backend} />
+              <div className="hidden md:block absolute right-0 top-1/8 bottom-1/8 w-[1px] bg-neutral-600"></div>
+            </div>
 
+            {/* Columna Frontend */}
+            <div className="relative">
+              <SkillColumn title="Frontend" items={skills.frontend} />
+            </div>
+          </div>
+        </main>
 
       </div>
     </section>

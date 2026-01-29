@@ -35,6 +35,10 @@
     "bullet1": "Development of modern, accessible, and scalable interfaces using React.js and TypeScript.Efficient state management with Zustand for dynamic applications.",
     "bullet2": "Consumption and validation of REST APIs documented with Swagger.",
     "bullet3": "Testing and validation of services using Postman. Creation of reusable components and scalable structures."
+  },
+  "alert":{
+    "title": "System notification",
+    "jobTitle": "Attention: You must complete all fields before submitting."
   }
 }
 

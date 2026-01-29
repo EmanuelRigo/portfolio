@@ -35,6 +35,10 @@
     "bullet2": "Consumo y validación de APIs REST documentadas con Swagger.",
     "bullet3": "Pruebas y validaciones de servicios mediante Postman. Creación de componentes reutilizables y estructuras escalables."
   
+},
+"alert":{
+    "title": "Notificación del sistema",
+    "jobTitle": "Atención: Debes completar todos los campos antes de enviar."
 }
   
 }

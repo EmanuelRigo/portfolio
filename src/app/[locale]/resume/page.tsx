@@ -1,13 +1,29 @@
-
 "use client";
 
 import { useTranslations } from "next-intl"; // Importamos el hook
 import { JSX } from "react";
 import {
-  FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaBootstrap, FaJs, FaLinux, FaLanguage,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaBootstrap,
+  FaJs,
+  FaLinux,
+  FaLanguage,
 } from "react-icons/fa";
 import {
-  SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql, SiExpress, SiTypescript, SiDbeaver, SiPostman, SiDocker,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiMysql,
+  SiExpress,
+  SiTypescript,
+  SiDbeaver,
+  SiPostman,
+  SiDocker,
 } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
@@ -40,7 +56,13 @@ const skills = {
   ],
 };
 
-const SkillColumn = ({ title, items }: { title: string; items: Array<{ name: string; icon: JSX.Element }> }) => (
+const SkillColumn = ({
+  title,
+  items,
+}: {
+  title: string;
+  items: Array<{ name: string; icon: JSX.Element }>;
+}) => (
   <div className="p-4 h-full flex flex-col">
     <h2 className="text-xl font-semibold mb-3 border-b border-neutral-600 pb-1">
       {title}
@@ -61,9 +83,8 @@ export default function ResumePage() {
   const t = useTranslations("Resume");
 
   return (
-    <section className="overflow-hidden h-full bg-neutral-900 text-neutral-100 p-4 font-sans">
+    <section className="overflow-hidden h-full bg-neutral-900 text-neutral-100 px-4 font-sans">
       <div className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-4 h-full">
-
         {/* SECCIÓN EXPERIENCIA */}
         <aside className="relative bg-neutral-800 rounded-md p-4 h-full">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-yellow-400 rounded-l-md"></div>
@@ -103,7 +124,6 @@ export default function ResumePage() {
             </div>
           </div>
         </main>
-
       </div>
     </section>
   );

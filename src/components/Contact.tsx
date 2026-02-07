@@ -1,4 +1,3 @@
-
 // "use client";
 
 // import { useState, ChangeEvent, FormEvent } from "react";
@@ -22,7 +21,7 @@
 //     email: "",
 //     subject: "",
 //   });
-  
+
 //   const [showPhone, setShowPhone] = useState(false);
 //   const [status, setStatus] = useState<{ type: "success" | "error" | "warning", msg: string } | null>(null);
 
@@ -41,7 +40,7 @@
 
 //     // VALIDACIÓN: Usamos tAlert igual que usaste t("bullet1") en Resume
 //     if (!formData.name || !formData.email || !formData.subject) {
-//       showNotification("warning", tAlert("jobTitle")); 
+//       showNotification("warning", tAlert("jobTitle"));
 //       return;
 //     }
 
@@ -55,7 +54,7 @@
 //       if (response.ok) {
 //         setFormData({ name: "", email: "", subject: "" });
 //         // Si agregas "success" a tu JSON de alert, lo llamas así:
-//         showNotification("success", tAlert("success")); 
+//         showNotification("success", tAlert("success"));
 //       } else {
 //         throw new Error();
 //       }
@@ -71,7 +70,7 @@
 
 //   return (
 //     <div className="md:px-4 text-neutral-200 animate-fadeIn relative">
-      
+
 //       {/* VENTANA DE NOTIFICACIÓN (Basada en tu JSON "alert") */}
 //       <AnimatePresence>
 //         {status && (
@@ -81,8 +80,8 @@
 //             animate={{ opacity: 1, y: 0, x: "-50%", scale: 1 }}
 //             exit={{ opacity: 0, y: -20, x: "-50%", scale: 0.9 }}
 //             className={`fixed top-10 left-1/2 z-[100] flex items-center gap-4 px-8 py-5 rounded-xl border-2 shadow-2xl min-w-[350px] md:min-w-[450px] backdrop-blur-md ${
-//               status.type === "success" ? "bg-neutral-900/95 border-green-500" : 
-//               status.type === "warning" ? "bg-neutral-900/95 border-yellow-400" : 
+//               status.type === "success" ? "bg-neutral-900/95 border-green-500" :
+//               status.type === "warning" ? "bg-neutral-900/95 border-yellow-400" :
 //               "bg-neutral-900/95 border-red-500"
 //             }`}
 //           >
@@ -91,7 +90,7 @@
 //               {status.type === "warning" && <FaExclamationTriangle className="text-yellow-400" />}
 //               {status.type === "error" && <FaTimesCircle className="text-red-500" />}
 //             </div>
-            
+
 //             <div className="flex flex-col text-left">
 //               <span className="text-xs uppercase tracking-widest font-bold text-neutral-500 mb-1">
 //                 {tAlert("title")}
@@ -165,7 +164,7 @@
 //                 </motion.div>
 //               )}
 //             </AnimatePresence>
-            
+
 //             <button
 //               type="button"
 //               onClick={() => setShowPhone(!showPhone)}
@@ -220,7 +219,7 @@ const Contact = () => {
   } | null>(null);
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -250,7 +249,7 @@ const Contact = () => {
             Accept: "application/json",
           },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -271,7 +270,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:px-4 text-neutral-200 animate-fadeIn relative">
+    <div className="md:px-4 h-full text-neutral-200 animate-fadeIn relative">
       {/* NOTIFICACIÓN */}
       <AnimatePresence>
         {status && (
@@ -284,8 +283,8 @@ const Contact = () => {
               status.type === "success"
                 ? "bg-neutral-900/95 border-green-500"
                 : status.type === "warning"
-                ? "bg-neutral-900/95 border-yellow-400"
-                : "bg-neutral-900/95 border-red-500"
+                  ? "bg-neutral-900/95 border-yellow-400"
+                  : "bg-neutral-900/95 border-red-500"
             }`}
           >
             <div className="text-3xl">

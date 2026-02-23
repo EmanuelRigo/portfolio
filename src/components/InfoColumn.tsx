@@ -26,7 +26,7 @@ const InfoColumn = () => {
   };
 
   return (
-    <div className="w-full md:w-44  md:h-full  md:bg-neutral-800 text-white rounded-md pe-5 md:p-4 flex md:flex-col space-y-6 text-sm order-2 md:order-1 items-center md:items-start  justify-between md:justify-start ">
+    <div className="w-full md:w-44  md:h-full  md:bg-neutral-900/60 text-white rounded-md pe-5 md:p-4 flex md:flex-col space-y-6 text-sm order-2 md:order-1 items-center md:items-start  justify-between md:justify-start ">
       {/* Ubicación */}
       <div className="flex items-center space-x-2 mb-0 md:mb-4">
         <FaMapMarkerAlt />

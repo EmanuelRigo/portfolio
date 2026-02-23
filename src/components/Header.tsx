@@ -1,4 +1,3 @@
-
 // "use client";
 // import { useState, useEffect } from "react";
 // import Link from "next/link";
@@ -24,13 +23,13 @@
 //   const t = useTranslations("Header");
 //   const pathname = usePathname();
 //   const locale = useLocale();
-  
+
 //   const [showExperience, setShowExperience] = useState(false);
 
 //   useEffect(() => {
 //     const interval = setInterval(() => {
 //       setShowExperience((prev) => !prev);
-//     }, 4000); 
+//     }, 4000);
 //     return () => clearInterval(interval);
 //   }, []);
 
@@ -50,8 +49,8 @@
 
 //   // Clase común para el subrayado que ahora aplicaremos al contenido interno
 //   const underlineStyles = `
-//     relative 
-//     after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-black 
+//     relative
+//     after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-black
 //     after:transition-transform after:duration-300 after:origin-left after:w-full
 //   `;
 
@@ -60,7 +59,7 @@
 //       <nav className="flex space-x-2 md:space-x-4">
 //         {navLinks.map((link) => {
 //           const isActive = pathname === link.href;
-          
+
 //           return (
 //             <Link
 //               key={link.href}
@@ -73,7 +72,7 @@
 //                   {/* El subrayado ahora vive en este span interno que envuelve solo el Typewriter */}
 //                   <span className={`${underlineStyles} ${isActive ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100"}`}>
 //                     <AnimatePresence mode="wait">
-//                       <TypewriterText 
+//                       <TypewriterText
 //                         key={showExperience ? "exp" : "res"}
 //                         text={showExperience ? currentWords.exp : currentWords.res}
 //                       />
@@ -183,9 +182,7 @@ const Header = () => {
                       <TypewriterText
                         key={showExperience ? "exp" : "res"}
                         text={
-                          showExperience
-                            ? currentWords.exp
-                            : currentWords.res
+                          showExperience ? currentWords.exp : currentWords.res
                         }
                       />
                     </AnimatePresence>

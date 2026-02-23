@@ -29,8 +29,16 @@ export default async function RootLayout({
         <body className="">
           <NextIntlClientProvider>
             {/* Sidebar */}
-            <div className="w-screen h-svh bg-black  flex justify-center items-center ">
-              <div className=" bg-neutral-900 rounded-md h-full 2xl:h-[700px] 2xl:container w-full  flex p-6 flex-col lg:relative lg:border-3 border-neutral-700 ">
+            <div className="w-screen h-svh bg-neutral-900/100  flex justify-center items-center relative overflow-hidden">
+              <Image
+                src="/images/_BRH3818.JPG"
+                alt="Background"
+                fill
+                className="object-cover"
+                priority
+                quality={90}
+              />
+              <div className="bg-neutral-900/60 backdrop-blur-sm rounded-md h-full 2xl:h-[700px] 2xl:container w-full flex p-6 flex-col lg:relative lg:border-3 border-neutral-800 z-10">
                 {/* Header */}
                 <div className="w-full flex justify-center items-center">
                   {/* <Header /> */}

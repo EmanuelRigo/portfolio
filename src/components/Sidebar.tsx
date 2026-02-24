@@ -109,7 +109,7 @@ const Sidebar = () => {
   const { setHoveredIcon, hoveredIcons } = useAppContext();
 
   return (
-    <div className="w-10 md:w-20 h-full bg-neutral-800/40 text-neutral-700 flex flex-col items-center rounded-md overflow-hidden py-4">
+    <div className="w-10 md:w-20 h-full bg-neutral-800/50 text-neutral-700 flex flex-col items-center rounded-md overflow-hidden py-4">
       <div className="relative w-full h-full overflow-hidden mask-y-from-70%">
         <div className="scrolling-icons absolute top-0 left-0 w-full flex flex-col">
           {[...iconLinks, ...iconLinks].map((item, idx) => (

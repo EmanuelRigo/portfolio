@@ -83,10 +83,10 @@ export default function ResumePage() {
   const t = useTranslations("Resume");
 
   return (
-    <section className="overflow-hidden h-full bg-neutral-900 text-neutral-100 px-4 font-sans">
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-4 h-full">
+    <section className="overflow-hidden h-full  text-neutral-100 px-4 font-sans">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-4 h-full">
         {/* SECCIÓN EXPERIENCIA */}
-        <aside className="relative bg-neutral-800 rounded-md p-4 h-full">
+        <aside className="relative bg-neutral-800/50 rounded-md p-4 h-full">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-yellow-400 rounded-l-md"></div>
           <div className="pl-2">
             <h2 className="text-xl font-semibold mb-3 border-b border-neutral-600 pb-1">
@@ -104,7 +104,7 @@ export default function ResumePage() {
         </aside>
 
         {/* CONTENEDOR DE SKILLS */}
-        <main className="bg-neutral-800 rounded-md overflow-hidden">
+        <main className="bg-neutral-800/50 rounded-md overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-3 h-full">
             {/* Columna Tools */}
             <div className="relative">

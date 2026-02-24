@@ -41,7 +41,7 @@ const InfoColumn = () => {
         className="flex items-center space-x-2 hover:text-green-400 transition-colors mb-0 md:mb-4"
       >
         <FaFileAlt />
-        <span>CV</span>
+        <span>c.v.</span>
       </a>
 
       {/* LinkedIn */}
